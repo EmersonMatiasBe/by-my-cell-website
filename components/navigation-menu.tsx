@@ -14,9 +14,10 @@ export default function NavigationMenu({ items, label }: NavigationMenu) {
   const [open, setOpen] = useState(false)
 
   return (
-    <button
+    <Link
       onMouseEnter={() => setOpen(true)}
       onMouseLeave={() => setOpen(false)}
+      href="/servicos"
       className="relative text-black"
     >
       <p className="text-green-500">{label}</p>
@@ -36,6 +37,6 @@ export default function NavigationMenu({ items, label }: NavigationMenu) {
           </div>
         </div>
       )}
-    </button>
+    </Link>
   )
 }
