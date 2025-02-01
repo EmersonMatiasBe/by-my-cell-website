@@ -1,7 +1,15 @@
-import Button from '@/components/ui/button-1'
+import Button from '@/components/ui/button/index'
 import Wrapper from '@/components/ui/wrapper'
+import useTranslations from '@/i18n/translations'
+import { BsWhatsapp, BsArrowDown } from 'react-icons/bs'
 
-export default function HeroSection() {
+export default function HeroSection({ lang }: { lang: 'pt' | 'en' }) {
+  const {
+    home: {
+      heroSection: { title, subtitle, firstButton, secondButton }
+    }
+  } = useTranslations(lang)
+
   return (
     <Wrapper className="w-full h-dvh">
       <img
@@ -10,22 +18,16 @@ export default function HeroSection() {
         src="/bg-home.jpg"
       />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white flex flex-col items-center text-center">
-        <h1 className="text-6xl mb-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-        </h1>
-        <p className="text-xl text-white font-light">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, nam, accusantium, velit
-          laborum soluta expedita minima veniam quas delectus quibusdam magni facilis illo
-          perspiciatis. Tempore cumque voluptatum praesentium rem dignissimos.
-        </p>
+        <h1 className="text-6xl mb-5">{title}</h1>
+        <p className="text-xl text-white font-light">{subtitle}</p>
 
         <div className="mt-10 flex  gap-5">
-          <Button className="bg-primary-500 px-5 py-5 rounded-lg w-[260px] font-semibold">
-            Quero uma análise
-          </Button>
-          <Button className="px-5 py-4 bg-secondary-500 rounded-lg w-[260px] font-semibold">
-            Saber mais sobre a empresa
-          </Button>
+          <Button.Primary className="h-16 w-[340px]" icon={<BsWhatsapp className="text-2xl" />}>
+            {firstButton}
+          </Button.Primary>
+          <Button.Secondary className="h-16 w-[340px]" icon={<BsArrowDown className="text-2xl" />}>
+            {secondButton}
+          </Button.Secondary>
         </div>
       </div>
     </Wrapper>

@@ -1,10 +1,10 @@
-import Button from '@/components/ui/button-1'
+import Button from '@/components/ui/button/raw-button'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 
 export default function Steps() {
   return (
-    <Container className="pt-10">
+    <Container className=" pt-20">
       <Wrapper className="overflow-hidden flex justify-between">
         <div className="max-w-[550px] flex flex-col  justify-center">
           <h6 className="font-semibold mb-1 text-left">Passo a Passo</h6>

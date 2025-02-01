@@ -12,20 +12,20 @@ import Ebook from './sections/ebook'
 import Steps from './sections/steps'
 import OtherServices from './sections/other-services'
 
-export default function Home() {
+export default function Home({ lang }: { lang: 'pt' | 'en' }) {
   return (
     <main className="w-full">
-      <HeroSection />
+      <HeroSection lang={lang} />
 
-      <Results />
+      <Steps />
+
+      <SpecializedSolutions lang={lang} />
 
       <Solutions />
 
-      <SpecializedSolutions />
-
       <Partners />
 
-      <Steps />
+      <Results lang={lang} />
 
       <AboutUs />
 
