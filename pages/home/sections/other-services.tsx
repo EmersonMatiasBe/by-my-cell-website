@@ -1,4 +1,4 @@
-import Button from '@/components/ui/button-1'
+import Button from '@/components/ui/button/raw-button'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 
@@ -30,7 +30,7 @@ export default function OtherServices() {
         </Wrapper>
 
         <Wrapper className="w-1/2 relative">
-          <img src="/bg-home.jpg" className="w-full h-full object-cover  brightness-[0.2]" alt="" />
+          <img src="/bg-home.jpg" className="w-full h-full object-cover brightness-[0.2]" alt="" />
           <div className="absolute bottom-10 left-10 text-white">
             <h6 className="text-primary-300 font-bold text-3xl mb-1">
               Engenharia de Proteínas e Metabolômica

@@ -1,5 +1,5 @@
 import Home from '@/pages/home/home'
 
 export default function HomePt() {
-  return <Home />
+  return <Home lang="pt" />
 }

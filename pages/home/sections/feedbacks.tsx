@@ -78,7 +78,7 @@ export default function Feedbacks() {
 
         <Carousel>
           <CarouselContent className="p-5">
-            {reviews.map(({ name, role, review, rating, avatar }, index) => (
+            {reviews.map(({ name, role, review }, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="bg-white rounded-lg shadow-black shadow-lg  p-6 flex flex-col items-center text-center">
                   <h3 className="text-xl font-semibold text-secondary-500">{name}</h3>

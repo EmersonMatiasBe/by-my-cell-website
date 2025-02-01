@@ -1,4 +1,4 @@
-import Button from '@/components/ui/button-1'
+import Button from '@/components/ui/button/raw-button'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 
