@@ -4,8 +4,8 @@ import Wrapper from '@/components/ui/wrapper'
 
 export default function Steps() {
   return (
-    <Container className=" pt-20">
-      <Wrapper className="overflow-hidden flex justify-between">
+    <Container className=" py-20 max-w-full bg-gray-100">
+      <Wrapper className="overflow-hidden flex justify-between max-w-[1280px] mx-auto">
         <div className="max-w-[550px] flex flex-col  justify-center">
           <h6 className="font-semibold mb-1 text-left">Passo a Passo</h6>
           <h2 className="text-4xl font-bold text-secondary-500 mb-2">

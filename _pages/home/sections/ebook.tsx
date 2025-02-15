@@ -2,7 +2,7 @@ import Container from '@/components/ui/container'
 
 export default function Ebook() {
   return (
-    <Container className="py-20 mt-20 relative shadow-[0px_0px_15px_0px_rgba(0,0,0,0.5)] max-w-full  text-white">
+    <Container className="py-20  relative shadow-[0px_0px_15px_0px_rgba(0,0,0,0.5)] max-w-full  text-white">
       <div className="mx-auto max-w-[1280px] px-6 lg:px-0 text-center z-10 relative">
         <h2 className="text-4xl font-semibold text-primary-500 mb-2">
           Baixe o Nosso eBook<br></br> Exclusivo sobre Análise de Solo

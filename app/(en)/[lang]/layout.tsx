@@ -6,11 +6,12 @@ export default function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode
+  params: { lang: 'pt' | 'en' }
 }>) {
   return (
     <html lang="en">
       <body className={'antialiased'}>
-        <Header lang={params.lang}/>
+        <Header lang={params.lang} />
         {children}
       </body>
     </html>

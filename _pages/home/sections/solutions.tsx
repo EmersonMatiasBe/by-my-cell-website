@@ -22,7 +22,7 @@ export default function Solutions() {
           </h2>
         </Wrapper>
 
-        <Wrapper className=" h-[800px] flex gap-5">
+        <Wrapper className=" h-[600px] flex gap-5">
           {images.map((image, index) => (
             <div
               className="w-[20%] h-full rounded-[10px] hover:rounded-md relative bg-blue-500 hover:w-[50%] transition-all duration-500 ease-in-out group overflow-hidden"

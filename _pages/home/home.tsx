@@ -17,19 +17,19 @@ export default function Home({ lang }: { lang: 'pt' | 'en' }) {
     <main className="w-full">
       <HeroSection lang={lang} />
 
-      <Steps />
+      <Results lang={lang} />
+
+      <Partners />
 
       <SpecializedSolutions lang={lang} />
 
       <Solutions />
 
-      <Partners />
-
-      <Results lang={lang} />
-
-      <AboutUs />
+      <Steps />
 
       <Ebook />
+
+      <AboutUs />
 
       <Feedbacks />
 
