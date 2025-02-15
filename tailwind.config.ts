@@ -40,7 +40,7 @@ const config: Config = {
       keyframes: {
         animate: {
           from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-99vw)' }
+          to: { transform: 'translateX(-1900px)' }
         },
         orbit: {
           '0%': { transform: 'rotate(-90deg)  translateX(200px)' },
@@ -50,7 +50,7 @@ const config: Config = {
         }
       },
       animation: {
-        slider: 'animate 20s linear infinite',
+        slider: 'animate 10s linear infinite',
         orbit: 'orbit 4s linear infinite'
       }
     }

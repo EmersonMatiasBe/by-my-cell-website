@@ -19,10 +19,12 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
 
       <Results lang={lang} />
 
+      <Partners />
+
       {/*
 
 
-      <Partners />
+
 
       <SpecializedSolutions lang={lang} />
 

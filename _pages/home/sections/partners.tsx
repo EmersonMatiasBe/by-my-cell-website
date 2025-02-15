@@ -66,7 +66,7 @@ export default function Partners() {
   ]
 
   return (
-    <Container className="max-w-full relative flex flex-col overflow-x-hidden mt-20 py-10 shadow-lg shadow-black mb-5">
+    <Container className="max-w-full relative flex flex-col overflow-x-hidden py-20 shadow-lg shadow-black mb-5">
       <div className="mb-10">
         <h6 className="font-semibold mb-2 text-center">Clientes e Parceiros</h6>
         <h2 className="text-4xl font-semibold text-black text-center mb-1">
@@ -75,9 +75,9 @@ export default function Partners() {
       </div>
 
       <div className="animate-slider z-10">
-        <div className="flex justify-between w-[198vw] px-20">
+        <div className="flex justify-between w-[3801.59px] px-20">
           {partners.map(({ urlImage, altImage, id }) => (
-            <Wrapper className="relative w-[160px] h-[160px]" key={id}>
+            <Wrapper className="w-[160px] h-[160px] w-min-[160px] h-min-[160px]" key={id}>
               <img src={urlImage} alt={altImage} className="w-full h-full object-contain" />
             </Wrapper>
           ))}
