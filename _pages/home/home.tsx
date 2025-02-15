@@ -17,7 +17,8 @@ export default function Home({ lang }: { lang: 'pt' | 'en' }) {
     <main className="w-full">
       <HeroSection lang={lang} />
 
-      <Results lang={lang} />
+      {/*
+        <Results lang={lang} />
 
       <Partners />
 
@@ -86,6 +87,7 @@ export default function Home({ lang }: { lang: 'pt' | 'en' }) {
           <img src="/faq-image.svg" alt="" className="object-contain w-full h-full" />
         </Wrapper>
       </Container>
+        */}
 
       <FloatingWhatsapp />
     </main>
