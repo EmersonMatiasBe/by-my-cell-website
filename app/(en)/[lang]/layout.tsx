@@ -2,14 +2,15 @@ import '../../globals.css'
 import Header from '@/components/header/header'
 
 export default function RootLayout({
-  children
+  children,
+  params
 }: Readonly<{
   children: React.ReactNode
 }>) {
   return (
     <html lang="en">
       <body className={'antialiased'}>
-        <Header lang="en" />
+        <Header lang={params.lang}/>
         {children}
       </body>
     </html>
