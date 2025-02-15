@@ -6,7 +6,7 @@ export default function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode
-  params: { lang: 'pt' | 'en' }
+  params: Params
 }>) {
   return (
     <html lang="en">

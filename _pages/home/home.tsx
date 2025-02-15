@@ -12,13 +12,15 @@ import Ebook from './sections/ebook'
 import Steps from './sections/steps'
 import OtherServices from './sections/other-services'
 
-export default function Home({ lang }: { lang: 'pt' | 'en' }) {
+export default function Home({ lang }: { lang: LanguageOptions }) {
   return (
     <main className="w-full">
       <HeroSection lang={lang} />
 
+      <Results lang={lang} />
+
       {/*
-        <Results lang={lang} />
+
 
       <Partners />
 

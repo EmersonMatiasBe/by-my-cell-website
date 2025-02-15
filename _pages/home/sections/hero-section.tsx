@@ -3,7 +3,7 @@ import Wrapper from '@/components/ui/wrapper'
 import useTranslations from '@/i18n/translations'
 import { BsWhatsapp, BsArrowDown } from 'react-icons/bs'
 
-export default function HeroSection({ lang }: { lang: 'pt' | 'en' }) {
+export default function HeroSection({ lang }: { lang: LanguageOptions }) {
   const {
     home: {
       heroSection: { title, subtitle, firstButton, secondButton }
