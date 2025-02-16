@@ -33,8 +33,11 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
 
       <Feedbacks />
 
+      <OtherServices />
+
       {/*
 
+ 
 
 
       <Container className=" gap-10 mt-20 hidden">
