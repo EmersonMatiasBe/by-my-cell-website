@@ -31,15 +31,11 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
 
       <AboutUs />
 
-      {/*
-
- 
-
-
-
       <Feedbacks />
 
-      <OtherServices />
+      {/*
+
+
 
       <Container className=" gap-10 mt-20 hidden">
         <Wrapper className="w-[50%]">
