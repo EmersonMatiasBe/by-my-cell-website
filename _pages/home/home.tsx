@@ -25,12 +25,14 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
 
       <Solutions />
 
+      <Steps />
+
       {/*
 
 
       
 
-      <Steps />
+
 
       <Ebook />
 
