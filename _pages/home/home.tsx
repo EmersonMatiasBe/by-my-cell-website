@@ -23,10 +23,12 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
 
       <SpecializedSolutions lang={lang} />
 
+      <Solutions />
+
       {/*
 
 
-      <Solutions />
+      
 
       <Steps />
 

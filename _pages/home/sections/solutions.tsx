@@ -12,8 +12,8 @@ export default function Solutions() {
   ]
 
   return (
-    <Container className=" max-w-full">
-      <Container className="mt-20 mb-10">
+    <Container className="max-w-full px-10 py-20">
+      <Container className="">
         <Wrapper className="mb-10 text-center">
           <h6 className="font-semibold mb-1">Serviços</h6>
           <h2 className="text-4xl font-bold  mb-2 text-secondary-500">
@@ -22,7 +22,7 @@ export default function Solutions() {
           </h2>
         </Wrapper>
 
-        <Wrapper className=" h-[600px] flex gap-5">
+        <Wrapper className="h-[600px] gap-5 hidden lg:flex ">
           {images.map((image, index) => (
             <div
               className="w-[20%] h-full rounded-[10px] hover:rounded-md relative bg-blue-500 hover:w-[50%] transition-all duration-500 ease-in-out group overflow-hidden"
@@ -45,6 +45,26 @@ export default function Solutions() {
 
               <div className="z-10 absolute bottom-10 py-4 text-white h-fit top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  group-hover:translate-x-[100vw] opacity-100  group-hover:opacity-0   transition-all duration-500 ease-in-out">
                 <h3 className="text-2xl font-bold mb-2">Análise de Microbiota</h3>
+              </div>
+            </div>
+          ))}
+        </Wrapper>
+
+        <Wrapper className="flex w-full flex-wrap justify-center gap-8 lg:hidden">
+          {images.map((service, index) => (
+            <div
+              className="max-w-[400px] w-full bg-white overflow-hidden rounded-lg shadow-md shadow-black hover:scale-110"
+              key={service}
+            >
+              <img src="/building.webp" className="" alt="" />
+              <div className="px-4 py-4">
+                <p className="font-semibold text-lg mb-3">Serviço {index + 1}</p>
+                <p className="line-clamp-3 font-light mb-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi praesentium dicta
+                  nemo alias cumque suscipit sint assumenda possimus? Temporibus quidem hic optio a
+                  quo pariatur praesentium dolore magnam. Porro, consectetur.
+                </p>
+                <Button className="px-4 py-2 bg-primary-500 rounded-md ml-auto">Saber mais</Button>
               </div>
             </div>
           ))}
