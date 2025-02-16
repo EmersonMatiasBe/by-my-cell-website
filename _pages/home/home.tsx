@@ -27,16 +27,15 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
 
       <Steps />
 
-      {/*
-
-
-      
-
-
-
       <Ebook />
 
       <AboutUs />
+
+      {/*
+
+ 
+
+
 
       <Feedbacks />
 

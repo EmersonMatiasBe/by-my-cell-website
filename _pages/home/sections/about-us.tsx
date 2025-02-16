@@ -4,8 +4,8 @@ import Wrapper from '@/components/ui/wrapper'
 
 export default function AboutUs() {
   return (
-    <Container className="flex mt-20 gap-10 ">
-      <Wrapper className="relative w-[60%] h-auto">
+    <Container className="flex flex-col items-center py-20 gap-10 px-5 lg:flex-row ">
+      <Wrapper className="w-[100%] max-w-[600px]  h-auto relative lg:w-[60%] lg:max-w-full">
         <img
           className="object-cover w-full h-full"
           src="/building.webp"
@@ -14,15 +14,17 @@ export default function AboutUs() {
         />
       </Wrapper>
 
-      <Wrapper className="w-1/2">
-        <h6 className="font-semibold mb-2">Quem Somos</h6>
-        <h2 className="text-4xl font-bold text-secondary-500 mb-2">
+      <Wrapper className="w-full lg:w-1/2">
+        <h6 className="text-center font-semibold mb-2 lg:text-left">Quem Somos</h6>
+        <h2 className="text-center text-4xl font-bold text-secondary-500 mb-2 lg:text-left">
           Por Dentro da<br></br> Nossa Jornada
         </h2>
-        <p className="text-lg">Entenda o que nos move e nos torna únicos.</p>
+        <p className="text-center text-lg lg:text-left">
+          Entenda o que nos move e nos torna únicos.
+        </p>
 
         <div className="mt-10">
-          <p>
+          <p className="text-justify lg:text-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nemo laudantium
             perferendis iure, impedit qui repellat consectetur inventore asperiores assumenda odio
             voluptatibus placeat expedita et magni distinctio! Sint, officia temporibus! Lorem ipsum
