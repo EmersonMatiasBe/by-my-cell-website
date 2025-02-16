@@ -21,12 +21,10 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
 
       <Partners />
 
+      <SpecializedSolutions lang={lang} />
+
       {/*
 
-
-
-
-      <SpecializedSolutions lang={lang} />
 
       <Solutions />
 
