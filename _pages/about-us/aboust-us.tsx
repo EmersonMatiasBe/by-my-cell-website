@@ -30,20 +30,20 @@ export default function AboutUs() {
   ]
 
   return (
-    <Container className="py-40">
-      <div className="container mx-auto px-6">
+    <Container className="py-40 px-5">
+      <Wrapper>
         <h2 className="text-4xl font-bold text-white text-center mb-8">Quem Somos</h2>
 
-        {/* Empresa */}
         <div className="flex flex-wrap gap-10 justify-center mb-10">
-          <div className="w-1/2 h-auto">
+          <div className="w-[90%] max-w-[600px] h-auto overflow-hidden bg-red-500 lg:w-1/2">
             <img
               src="/building.webp"
               alt="Nossa Empresa"
-              className="rounded-xl w-full h-full object-cover"
+              className="rounded-xl w-full h-full object-contain"
             />
           </div>
-          <div className="w-full md:w-1/2 flex flex-col justify-center">
+
+          <div className="w-full text-center  flex flex-col justify-center lg:w-1/2 lg:text-left">
             <p className="text-lg text-gray-600 mb-4">
               Somos uma empresa inovadora que transforma desafios em soluções. Com mais de 10 anos
               de experiência, já conquistamos o mercado com nossa excelência em análise de solo e
@@ -82,7 +82,7 @@ export default function AboutUs() {
             </div>
           ))}
         </div>
-      </div>
+      </Wrapper>
 
       <Wrapper className="w-full h-[50dvh] absolute top-0 left-0 -z-10">
         <img src="/building.webp" className="w-full h-full object-cover brightness-[0.3]" alt="" />
