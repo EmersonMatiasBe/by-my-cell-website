@@ -9,6 +9,7 @@ import AboutUs from './sections/about-us'
 import Ebook from './sections/ebook'
 import Steps from './sections/steps'
 import OtherServices from './sections/other-services'
+import FloatingHeader from '@/components/floating-header'
 
 export default function Home({ lang }: { lang: LanguageOptions }) {
   return (
@@ -34,10 +35,6 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
       <OtherServices />
 
       {/*
-
- 
-
-
       <Container className=" gap-10 mt-20 hidden">
         <Wrapper className="w-[50%]">
           <h2 className="text-4xl font-semibold text-primary-500 mb-8">Perguntas Frequentes</h2>
@@ -91,6 +88,7 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
       </Container>
         */}
 
+      <FloatingHeader />
       <FloatingWhatsapp />
     </main>
   )

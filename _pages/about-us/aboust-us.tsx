@@ -35,7 +35,7 @@ export default function AboutUs() {
         <h2 className="text-4xl font-bold text-white text-center mb-8">Quem Somos</h2>
 
         <div className="flex flex-wrap gap-10 justify-center mb-10">
-          <div className="w-[90%] max-w-[600px] h-auto overflow-hidden bg-red-500 lg:w-1/2">
+          <div className="w-[90%] max-w-[600px] h-auto overflow-hidden lg:w-1/2">
             <img
               src="/building.webp"
               alt="Nossa Empresa"
