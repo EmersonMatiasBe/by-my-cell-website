@@ -2,11 +2,11 @@ import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import { IoArrowForwardCircle } from 'react-icons/io5'
 
-export default function Pesquisadores() {
+export default function Agro() {
   const services = ['1', '2', '3', '4', '5', '6', '8', '9', '10']
 
   return (
-    <Container className="pb-20 pt-40">
+    <Container className="pb-20 pt-40 px-5">
       <Wrapper className="text-white text-center mb-16 flex flex-col items-center">
         <h2 className="text-4xl font-bold">Serviços para Pesquisadores</h2>
         <p className="text-lg text-white mt-4 max-w-[900px]">
@@ -16,9 +16,12 @@ export default function Pesquisadores() {
         </p>
       </Wrapper>
 
-      <Wrapper className="flex  w-full flex-wrap justify-between gap-10">
+      <Wrapper className="flex w-full justify-center flex-wrap  gap-x-5 gap-y-10">
         {services.map((service) => (
-          <div className="max-w-[400px] w-full bg-white overflow-hidden rounded-lg" key={service}>
+          <div
+            className="w-full max-w-[600px] md:max-w-[400px] bg-white overflow-hidden rounded-lg"
+            key={service}
+          >
             <img src="/building.webp" alt="" />
             <div className="px-4 py-4">
               <p className="font-semibold text-secondary-800 text-lg">
