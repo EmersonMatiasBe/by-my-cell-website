@@ -1,5 +1,3 @@
-import Wrapper from '@/components/ui/wrapper'
-import Container from '@/components/ui/container'
 import FloatingWhatsapp from '@/components/floating-whatsapp'
 import HeroSection from './sections/hero-section'
 import Feedbacks from './sections/feedbacks'
