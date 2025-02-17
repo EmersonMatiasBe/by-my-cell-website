@@ -68,7 +68,7 @@ export default function Feedbacks() {
   ]
 
   return (
-    <Container className="py-20 my-20 w-full max-w-full shadow-[0px_0px_10px_0px_rgba(0,0,0,1)] shadow-black">
+    <Container className="py-20 my-20 w-full max-w-full bg-gray-100 ">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <h6 className="font-semibold mb-1 text-center">Avaliações</h6>
         <h2 className="text-4xl font-bold text-secondary-500 text-center mb-8">
@@ -80,7 +80,7 @@ export default function Feedbacks() {
           <CarouselContent className="p-5">
             {reviews.map(({ name, role, review }, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                <div className="bg-white h-full rounded-lg shadow-black shadow-lg  p-6 flex flex-col items-center text-center">
+                <div className="bg-white h-full rounded-lg shadow-black shadow-md  p-6 flex flex-col items-center text-center">
                   <h3 className="text-xl font-semibold text-secondary-500">{name}</h3>
                   <p className="text-sm text-gray-500 mb-4">{role}</p>
                   <p className="text-gray-700 mb-4">{review}</p>

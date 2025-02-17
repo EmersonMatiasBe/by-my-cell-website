@@ -1,3 +1,5 @@
+import FloatingHeader from '@/components/floating-header'
+import FloatingWhatsapp from '@/components/floating-whatsapp'
 import Button from '@/components/ui/button/index'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
@@ -48,6 +50,9 @@ export default function AgroServices() {
       <Wrapper className="w-full h-[50dvh] absolute top-0 left-0 -z-10">
         <img src="/building.webp" className="w-full h-full object-cover brightness-[0.3]" alt="" />
       </Wrapper>
+
+      <FloatingHeader />
+      <FloatingWhatsapp />
     </Container>
   )
 }

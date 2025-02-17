@@ -1,3 +1,5 @@
+import FloatingHeader from '@/components/floating-header'
+import FloatingWhatsapp from '@/components/floating-whatsapp'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import Link from 'next/link'
@@ -44,6 +46,9 @@ export default function Agro() {
       <Wrapper className="w-full h-dvh fixed top-0 left-0 -z-10 brightness-[0.2]">
         <img src="/laboratory.jpg" className="w-full h-full" alt="" />
       </Wrapper>
+
+      <FloatingHeader />
+      <FloatingWhatsapp />
     </Container>
   )
 }

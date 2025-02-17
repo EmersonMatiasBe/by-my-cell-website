@@ -1,3 +1,5 @@
+import FloatingHeader from '@/components/floating-header'
+import FloatingWhatsapp from '@/components/floating-whatsapp'
 import Button from '@/components/ui/button/raw-button'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
@@ -222,6 +224,9 @@ export default function Contact() {
       <Wrapper className="w-full h-dvh fixed top-0 left-0 -z-10 brightness-[0.2]">
         <img src="/plantation.jpg" className="w-full h-full" alt="" />
       </Wrapper>
+
+      <FloatingHeader />
+      <FloatingWhatsapp />
     </Container>
   )
 }

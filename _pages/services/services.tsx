@@ -1,3 +1,5 @@
+import FloatingHeader from '@/components/floating-header'
+import FloatingWhatsapp from '@/components/floating-whatsapp'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import Link from 'next/link'
@@ -60,6 +62,9 @@ export default function Services() {
           </div>
         </Wrapper>
       </Wrapper>
+
+      <FloatingHeader />
+      <FloatingWhatsapp />
     </Container>
   )
 }

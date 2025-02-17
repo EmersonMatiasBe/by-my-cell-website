@@ -66,7 +66,7 @@ export default function Partners() {
   ]
 
   return (
-    <Container className="max-w-full relative flex flex-col overflow-x-hidden py-20 shadow-[0px_0px_10px_0px_rgba(0,0,0,1)] mb-5">
+    <Container className="max-w-full relative flex flex-col overflow-x-hidden py-20 bg-gray-50 mb-5">
       <div className="mb-10">
         <h6 className="font-semibold mb-2 text-center">Clientes e Parceiros</h6>
         <h2 className="text-4xl font-semibold text-black text-center mb-1">
