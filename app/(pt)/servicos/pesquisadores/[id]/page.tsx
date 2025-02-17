@@ -23,7 +23,7 @@ export default function AgroServices() {
 
           <Wrapper className="w-full lg:w-1/2 flex flex-col justify-center">
             <div className="mb-5">
-              <h6 className="font-bold text-xl text-primary-800 mb-2">Descrição</h6>
+              <h6 className="font-bold text-xl text-secondary-800 mb-2">Descrição</h6>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio pariatur
                 aspernatur maxime suscipit? Maiores debitis nam dolore amet perferendis? Odio,
@@ -32,7 +32,7 @@ export default function AgroServices() {
             </div>
 
             <div>
-              <h6 className="font-bold text-xl text-primary-800 mb-2">Prazo</h6>
+              <h6 className="font-bold text-xl text-secondary-800 mb-2">Prazo</h6>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio pariatur
                 aspernatur maxime suscipit? Maiores debitis nam dolore amet perferendis? Odio,

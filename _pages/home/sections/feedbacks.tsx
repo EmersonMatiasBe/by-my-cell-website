@@ -68,7 +68,7 @@ export default function Feedbacks() {
   ]
 
   return (
-    <Container className="py-20 my-20 w-full max-w-full shadow-xl shadow-black">
+    <Container className="py-20 my-20 w-full max-w-full shadow-[0px_0px_10px_0px_rgba(0,0,0,1)] shadow-black">
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <h6 className="font-semibold mb-1 text-center">Avaliações</h6>
         <h2 className="text-4xl font-bold text-secondary-500 text-center mb-8">

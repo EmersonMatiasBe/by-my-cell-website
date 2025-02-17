@@ -1,5 +1,6 @@
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
+import Link from 'next/link'
 import { RiArrowRightCircleFill } from 'react-icons/ri'
 
 export default function Services() {
@@ -26,9 +27,12 @@ export default function Services() {
               Veja os serviços que oferecemos exclusivo para os pesquisadores
             </p>
 
-            <button className="text-white text-5xl mx-auto md:invisible md:group-hover:visible">
+            <Link
+              href="/servicos/pesquisadores"
+              className="text-white text-5xl mx-auto md:invisible md:group-hover:visible"
+            >
               <RiArrowRightCircleFill />
-            </button>
+            </Link>
           </div>
         </Wrapper>
 
@@ -47,9 +51,12 @@ export default function Services() {
               Veja os serviços que oferecemos exclusivo para os pesquisadores
             </p>
 
-            <button className="text-white text-5xl mx-auto md:invisible md:group-hover:visible">
+            <Link
+              href="/servicos/agro"
+              className="text-white text-5xl mx-auto md:invisible md:group-hover:visible"
+            >
               <RiArrowRightCircleFill />
-            </button>
+            </Link>
           </div>
         </Wrapper>
       </Wrapper>

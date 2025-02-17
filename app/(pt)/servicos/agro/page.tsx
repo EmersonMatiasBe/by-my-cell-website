@@ -1,5 +1,6 @@
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
+import Link from 'next/link'
 import { IoArrowForwardCircle } from 'react-icons/io5'
 
 export default function Agro() {
@@ -32,7 +33,9 @@ export default function Agro() {
                 nemo alias cumque suscipit sint assumenda possimus? Temporibus quidem hic optio a
                 quo pariatur praesentium dolore magnam. Porro, consectetur.
               </p>
-              <IoArrowForwardCircle className="text-4xl ml-auto text-primary-800" />
+              <Link href="/servicos/agro/1">
+                <IoArrowForwardCircle className="text-4xl ml-auto text-primary-800" />
+              </Link>
             </div>
           </div>
         ))}

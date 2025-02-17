@@ -15,8 +15,8 @@ import Container from '../ui/container'
 
 export default function Header({ lang }: { lang: 'pt' | 'en' }) {
   const items = [
-    { label: 'Para sua Empresa', link: '' },
-    { label: 'Para o Agro', link: '' }
+    { label: 'Para a Pesquisa', link: '/servicos/pesquisadores' },
+    { label: 'Para o Agro', link: '/servicos/agro' }
   ]
 
   const [location, setLocation] = useState('')

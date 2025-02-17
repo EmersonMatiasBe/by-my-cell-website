@@ -21,17 +21,23 @@ export default function Results({ lang }: { lang: LanguageOptions }) {
       </Wrapper>
 
       <Wrapper className="w-full flex flex-col gap-5  justify-center md:max-w-[55%] md:gap-10">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis sapiente animi enim
+          inventore molestiae rerum alias tempore quia non natus odit, eligendi cumque voluptatum
+          voluptatem eos quasi aspernatur, officiis exercitationem.
+        </p>
+
         {results.map(({ number, text }, index) => (
           <div
-            className="flex bg-neutral-100 gap-5 items-center shadow-md shadow-black px-10 py-5 rounded-md md:gap-10"
+            className="flex flex-col text-center gap-2 px-5 bg-white  items-center shadow-md shadow-black md:px-10 py-5 rounded-md"
             key={index}
           >
-            <div className="bg-primary-500 min-w-[50px] h-[50px] text-base  rounded-full flex items-center justify-center font-bold text-white md:min-w-[100px] md:h-[100px] md:text-3xl ">
+            <div className="text-primary-500  text-4xl   flex items-center justify-center font-bold    md:text-4xl ">
               {number}
             </div>
 
             <div>
-              <h6 className="text-lg font-medium md:text-2xl">{text}</h6>
+              <h6 className="text-lg font-bold md:text-2xl">{text}</h6>
             </div>
           </div>
         ))}
