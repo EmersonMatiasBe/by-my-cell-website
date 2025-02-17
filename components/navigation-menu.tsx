@@ -20,7 +20,7 @@ export default function NavigationMenu({ items, label }: NavigationMenu) {
       href="/servicos"
       className="relative text-black"
     >
-      <p className="text-green-500">{label}</p>
+      <p className="text-white">{label}</p>
       {open && (
         <div className="absolute bottom-0 translate-y-full w-fit flex flex-col ">
           <div className="h-3"></div>
