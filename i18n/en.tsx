@@ -67,9 +67,24 @@ const header = [
   { label: 'Contato', href: 'contato', items: null }
 ]
 
+const contact = {
+  title: 'Fale Conosco para Análises Genômicas',
+  subtitle: 'Entre em Contato',
+  subtitle_2:
+    'Tire suas dúvidas, solicite orçamentos ou agende uma visita. Estamos aqui para ajudá-lo!',
+  contactInformations: {
+    address:
+      'Endereço: Rua Martinico Prado 555. Piso Térreo. Vila Tibério. Ribeirão Preto - SP. 14050-050',
+    phone: '+55 (16) 99466-4643',
+    email: 'contato@bymycell.com',
+    openingHours: 'Segunda a sexta, das 8 às 17h.'
+  }
+}
+
 const messagesEn = {
   header,
-  home
+  home,
+  contact
 }
 
 export default messagesEn

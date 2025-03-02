@@ -1,8 +1,10 @@
+'use client'
 import FloatingHeader from '@/components/floating-header'
 import FloatingWhatsapp from '@/components/floating-whatsapp'
 import Button from '@/components/ui/button/raw-button'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
+import useTranslations from '@/i18n/translations'
 import Link from 'next/link'
 import {
   RiMapPinFill,
@@ -16,18 +18,15 @@ import {
 } from 'react-icons/ri'
 
 export default function Contact() {
+  const { contact } = useTranslations('pt')
+
   return (
     <Container className="pb-20 pt-40 px-5">
       <Wrapper className="max-w-7xl mx-auto lg:px-0">
         <div className="text-center mb-16">
-          <h6 className="font-semibold mb-2 text-white">Entre em Contato</h6>
-          <h2 className="text-4xl font-bold text-secondary-200">
-            Fale Conosco para Análises de Solo
-          </h2>
-          <p className="text-lg text-white mt-4">
-            Tire suas dúvidas, solicite orçamentos ou agende uma visita. Estamos aqui para ajudar
-            agricultores e pesquisadores!
-          </p>
+          <h6 className="font-semibold mb-2 text-white">{contact.subtitle}</h6>
+          <h2 className="text-4xl font-bold text-white leading-normal">{contact.title}</h2>
+          <p className="text-lg text-white mt-4">{contact.subtitle_2}</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -91,6 +90,14 @@ export default function Contact() {
                   ></textarea>
                 </div>
 
+                <div className="flex">
+                  <p>
+                    <input type="checkbox" className="mr-2" /> Ao selecionar esta caixa e enviar
+                    seus dados, você nos autoriza a te enviar e-mails. Você pode cancelar a qualquer
+                    momento.
+                  </p>
+                </div>
+
                 <button
                   type="submit"
                   className="w-full bg-primary-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-600 transition-all duration-300"
@@ -105,7 +112,7 @@ export default function Contact() {
                 Ficou com alguma dúvida? Entre em Contato
               </h6>
 
-              <Button className="px-5 py-4 bg-gradient-to-r from-primary-500 to-secondary-500 text-white rounded-lg w-[260px] font-semibold">
+              <Button className="px-5 py-4  bg-primary-500 text-white rounded-lg w-[260px] font-semibold">
                 Saber mais sobre a empresa
               </Button>
             </div>
@@ -114,9 +121,9 @@ export default function Contact() {
           <div className="space-y-8">
             <div className="rounded-lg overflow-hidden shadow-md shadow-black">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.075426745292!2d-46.65342658502206!3d-23.565734367638914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%201000%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1633023226789!5m2!1spt-BR!2sbr"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3720.5673804064336!2d-47.81992752385361!3d-21.169608278106107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bd3b0a985053%3A0x643a3b0319ff97f6!2sByMyCell!5e0!3m2!1spt-BR!2sbr!4v1740951591924!5m2!1spt-BR!2sbr"
                 width="100%"
-                height="300"
+                height="372"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
@@ -133,37 +140,35 @@ export default function Contact() {
                   <span className="bg-secondary-500 p-3 rounded-full text-white mr-4">
                     <RiMapPinFill />
                   </span>
-                  <p className="text-gray-700">
-                    Av. Paulista, 1000 - Bela Vista, São Paulo - SP, 01310-100
-                  </p>
+                  <p className="text-gray-700">{contact.contactInformations.address}</p>
                 </div>
 
                 <div className="flex items-center">
                   <span className="bg-secondary-500 p-3 rounded-full text-white mr-4">
                     <RiPhoneFill />
                   </span>
-                  <p className="text-gray-700">(11) 1234-5678</p>
+                  <p className="text-gray-700"> {contact.contactInformations.phone}</p>
                 </div>
 
                 <div className="flex items-center">
                   <span className="bg-secondary-500 p-3 rounded-full text-white mr-4">
                     <RiWhatsappFill />
                   </span>
-                  <p className="text-gray-700">(11) 99999-9999 (WhatsApp)</p>
+                  <p className="text-gray-700"> {contact.contactInformations.phone}</p>
                 </div>
 
                 <div className="flex items-center">
                   <span className="bg-secondary-500 p-3 rounded-full text-white mr-2 md:mr-4">
                     <RiMailFill />
                   </span>
-                  <p className="text-gray-700 ">contato@analisedesolo.com.br</p>
+                  <p className="text-gray-700 "> {contact.contactInformations.email}</p>
                 </div>
 
                 <div className="flex items-center">
                   <span className="bg-secondary-500 p-3 rounded-full text-white mr-4">
                     <RiTimeFill />
                   </span>
-                  <p className="text-gray-700">Segunda a Sexta, das 8h às 18h</p>
+                  <p className="text-gray-700"> {contact.contactInformations.openingHours}</p>
                 </div>
               </div>
 
