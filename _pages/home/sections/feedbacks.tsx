@@ -68,16 +68,16 @@ export default function Feedbacks() {
   ]
 
   return (
-    <Container className="py-20 my-20 rounded-lg h-[600px] md:h-[500px] bg-gray-50  shadow-lg shadow-black overflow-hidden relative">
-      <div className="px-4 sm:px-6 lg:px-12 absolute top-10 absolute-center-x z-10 w-full text-white">
+    <Container className="py-20 my-20 max-w-full h-[600px] md:h-[500px] shadow-lg overflow-hidden relative">
+      <div className="px-4 sm:px-6 lg:px-12 absolute top-10 absolute-center-x z-10 w-full text-black md:text-white">
         <h6 className="font-semibold mb-3 text-center">Avaliações</h6>
-        <h2 className="text-4xl font-bold text-center mb-8">
-          A <span className="font-bold bg-secondary-500 p-2">Satisfação</span>
+        <h2 className="text-4xl font-bold text-center leading-normal">
+          A <span className="font-bold bg-green-500 p-2">Satisfação</span>
           <br /> em cada palavra
         </h2>
       </div>
 
-      <div className="px-4 sm:px-6 lg:px-12 absolute left-0 top-[35%] z-10 w-full">
+      <div className="px-4 sm:px-6 lg:px-12 absolute left-0 top-[38%] z-10 w-full">
         <Carousel>
           <CarouselContent className="p-5">
             {reviews.map(({ name, role, review }, index) => (
@@ -95,8 +95,8 @@ export default function Feedbacks() {
         </Carousel>
       </div>
 
-      <div className="absolute w-full h-full bottom-0 left-0 blur-[1px]   brightness-[0.5]">
-        <img src="/bg-feedbacks.png" className="w-full h-full object-cover " alt="" />
+      <div className="absolute w-full h-full -bottom-10 md:bottom-0 left-0">
+        <img src="/bg-feedbacks.png" className="w-full h-full object-cover object-bottom" alt="" />
       </div>
     </Container>
   )

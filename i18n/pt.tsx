@@ -60,6 +60,28 @@ const home = {
         text: 'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas'
       }
     ]
+  },
+  ebook: {
+    title: (
+      <>
+        Conheça os <span className="p-2 bg-primary-500">Principais</span> Microrganismos<br></br> de
+        Interesse Agronômico
+      </>
+    ),
+    description:
+      'Preparamos um e-book com informações sobre os microrganismos benéficos e patogênicos mais relevantes para o solo.',
+    link: 'https://lp.bymycell.com.br/ebook-microrganismos'
+  },
+  aboutUs: {
+    title: (
+      <>
+        Por Dentro da <br></br> Nossa{' '}
+        <span className="p-2 bg-secondary-500 text-white">Jornada</span>
+      </>
+    ),
+    subtitle: 'Entenda o que os move e nos torna únicos.',
+    text: 'Buscamos simplificar o acesso à genômica de alto nível no Brasil, fornecendo aos clientes serviços relevantes de forma rápida e a preços acessíveis. Temos um laboratório próprio e controle de todo o processo de análise dos dados para atender nossos clientes da melhor maneira possível. Venha conhecer a ByMyCell e nossa equipe de especialistas!',
+    buttonLabel: 'Quem Somos'
   }
 }
 const header = [

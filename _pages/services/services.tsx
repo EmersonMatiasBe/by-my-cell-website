@@ -1,9 +1,9 @@
 import FloatingHeader from '@/components/floating-header'
 import FloatingWhatsapp from '@/components/floating-whatsapp'
+import { Primary, Secondary } from '@/components/ui/button/index'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import Link from 'next/link'
-import { RiArrowRightCircleFill } from 'react-icons/ri'
 
 export default function Services() {
   return (
@@ -31,9 +31,9 @@ export default function Services() {
 
             <Link
               href="/servicos/pesquisadores"
-              className="text-white text-5xl mx-auto md:invisible md:group-hover:visible"
+              className="text-white mx-auto md:invisible md:group-hover:visible"
             >
-              <RiArrowRightCircleFill />
+              <Secondary className="transition-none">Saber mais</Secondary>
             </Link>
           </div>
         </Wrapper>
@@ -55,9 +55,9 @@ export default function Services() {
 
             <Link
               href="/servicos/agro"
-              className="text-white text-5xl mx-auto md:invisible md:group-hover:visible"
+              className="text-white  mx-auto md:invisible md:group-hover:visible"
             >
-              <RiArrowRightCircleFill />
+              <Primary className="transition-none">Saber mais</Primary>
             </Link>
           </div>
         </Wrapper>
