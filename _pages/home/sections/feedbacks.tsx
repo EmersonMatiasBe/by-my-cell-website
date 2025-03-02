@@ -68,14 +68,16 @@ export default function Feedbacks() {
   ]
 
   return (
-    <Container className="py-20 my-20 w-full max-w-full bg-gray-100 ">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-12">
-        <h6 className="font-semibold mb-1 text-center">Avaliações</h6>
-        <h2 className="text-4xl font-bold text-secondary-500 text-center mb-8">
-          O que nossos
-          <br /> clientes dizem
+    <Container className="py-20 my-20 rounded-lg h-[600px] md:h-[500px] bg-gray-50  shadow-lg shadow-black overflow-hidden relative">
+      <div className="px-4 sm:px-6 lg:px-12 absolute top-10 absolute-center-x z-10 w-full text-white">
+        <h6 className="font-semibold mb-3 text-center">Avaliações</h6>
+        <h2 className="text-4xl font-bold text-center mb-8">
+          A <span className="font-bold bg-secondary-500 p-2">Satisfação</span>
+          <br /> em cada palavra
         </h2>
+      </div>
 
+      <div className="px-4 sm:px-6 lg:px-12 absolute left-0 top-[35%] z-10 w-full">
         <Carousel>
           <CarouselContent className="p-5">
             {reviews.map(({ name, role, review }, index) => (
@@ -91,6 +93,10 @@ export default function Feedbacks() {
           <CarouselPrevious className="left-1/2 transform -translate-x-[calc(50%+40px)] top-[105%] translate-y-0" />
           <CarouselNext className="left-1/2 transform -translate-x-[calc(50%-40px)] top-[105%]  translate-y-0" />
         </Carousel>
+      </div>
+
+      <div className="absolute w-full h-full bottom-0 left-0 blur-[1px]   brightness-[0.5]">
+        <img src="/bg-feedbacks.png" className="w-full h-full object-cover " alt="" />
       </div>
     </Container>
   )
