@@ -2,23 +2,13 @@
 import Link from 'next/link'
 import Wrapper from '../ui/wrapper'
 import NavigationMenu from '../navigation-menu'
-import {
-  RiInstagramFill,
-  RiLinkedinBoxFill,
-  RiMenuLine,
-  RiWhatsappFill,
-  RiYoutubeFill
-} from 'react-icons/ri'
+import { RiInstagramFill, RiLinkedinBoxFill, RiWhatsappFill, RiYoutubeFill } from 'react-icons/ri'
 import translations from '@/i18n/translations'
 import { useEffect, useState } from 'react'
 import Container from '../ui/container'
+import SideMenu from './side-menu'
 
 export default function Header({ lang }: { lang: 'pt' | 'en' }) {
-  const items = [
-    { label: 'Para a Pesquisa', link: '/servicos/pesquisadores' },
-    { label: 'Para o Agro', link: '/servicos/agro' }
-  ]
-
   const [location, setLocation] = useState('')
 
   useEffect(() => {
@@ -26,7 +16,7 @@ export default function Header({ lang }: { lang: 'pt' | 'en' }) {
     setLocation(path)
   }, [])
 
-  const aa = translations(lang)
+  const header = translations(lang)?.header
   return (
     <header
       data-location={location}
@@ -38,16 +28,17 @@ export default function Header({ lang }: { lang: 'pt' | 'en' }) {
         </Wrapper>
 
         <Wrapper className="gap-5 text-lg font-semibold hidden -- lg:flex">
-          <Link href="/" className="" onClick={() => setLocation('/')}>
-            {aa?.header[0].label}
-          </Link>
-          <NavigationMenu label="Serviços" items={items} />
-          <Link href="/quem-somos" onClick={() => setLocation('/quem-somos')}>
-            {aa?.header[2].label}
-          </Link>
-          <Link href="/contato" onClick={() => setLocation('/contato')}>
-            {aa?.header[3].label}
-          </Link>
+          {header.map(({ href, items, label }, index) => {
+            if (!items) {
+              return (
+                <Link href={href} onClick={() => setLocation('/contato')} key={index}>
+                  {label}
+                </Link>
+              )
+            } else {
+              return <NavigationMenu hrefLink={href} label={label} items={items} key={index} />
+            }
+          })}
         </Wrapper>
 
         <Wrapper className="lg:w-[200px] flex text-xl justify-between">
@@ -64,9 +55,7 @@ export default function Header({ lang }: { lang: 'pt' | 'en' }) {
             <RiWhatsappFill />
           </Link>
 
-          <div className="p-2 bg-white rounded-full text-secondary-500 lg:hidden">
-            <RiMenuLine className="text-xl" />
-          </div>
+          <SideMenu />
         </Wrapper>
       </Container>
     </header>

@@ -1,6 +1,6 @@
 const home = {
   heroSection: {
-    title: 'Welcome to ByMyCell',
+    title: 'Bem vindo à ByMyCell',
     subtitle: 'Simplificando a genômica no Brasil',
     firstButton: 'Fazer um orçamento online',
     secondButton: 'Saber mais sobre a empresa'
@@ -8,15 +8,16 @@ const home = {
   results: {
     title: (
       <>
-        Entregando excelência
-        <br /> nos resultados
+        Entregando <span className="p-2 bg-primary-500 text-white">Excelência</span>
+        <br /> nos Resultados
       </>
     ),
     subtitle: 'Números Importantes',
+    text: ' Na ByMyCell, nossa missão é entregar resultados de análise genômica de alta qualidade com rapidez e precisão. Com um portfólio de mais de 450 projetos bem-sucedidos, nos orgulhamos de superar as expectativas de nossos clientes. Nossa equipe especializada garante soluções inovadoras, sempre com foco na excelência e no sucesso de cada cliente.',
     results: [
-      { number: '+600', text: 'Amostras analisadas por mês' },
+      { number: '+500', text: 'Amostras analisadas por mês' },
       { number: '+150', text: 'Clientes satisfeitos' },
-      { number: '+400', text: 'Projetos realizados em nossas plataformas' },
+      { number: '+450', text: 'Projetos realizados em nossas plataformas' },
       { number: '20-60', text: 'Dias de prazo para entrega de resultados' }
     ]
   },
@@ -30,16 +31,44 @@ const home = {
       text: 'Realizamos análises metagenômicas de diversos tipos de amostras com tecnologia Illumina e/ou Nanopore para projetos científicos.'
     },
     buttonLabel: 'Saiba Mais'
+  },
+  services: {
+    title: 'Conheça nossos serviços',
+    items: [
+      {
+        title: 'Análise de microbiota',
+        text: 'Identificação de microrganismos presentes em amostras a partir de sequenciamento de DNA de nova geração'
+      },
+      {
+        title: 'Genomas de Bactérias',
+        text: 'Sequenciamento completo de genoma de bactérias em plataformas Illumina e Nanopore, com montagem a anotação'
+      },
+      {
+        title: 'Genomas de Fungos',
+        text: 'Sequenciamento completo de genomas de fungos e leveduras, com montagem a anotação'
+      },
+      {
+        title: 'Metagenômica Shotgun',
+        text: 'Análise por sequenciamento massivo de genomas presente em amostras complexas'
+      },
+      {
+        title: ' Bioinformática',
+        text: 'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas'
+      }
+    ]
   }
 }
-const messagesEn = {
-  header: [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: 'contato' },
 
-    { label: 'About Us', href: 'quem-somos' },
-    { label: 'Contact', href: 'contato' }
-  ],
+const header = [
+  { label: 'Inicio', href: '/', items: null },
+  { label: 'Serviços', href: 'contato', items: null },
+
+  { label: 'Quem Somos', href: 'quem-somos', items: null },
+  { label: 'Contato', href: 'contato', items: null }
+]
+
+const messagesEn = {
+  header,
   home
 }
 
