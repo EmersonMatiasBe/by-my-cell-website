@@ -1,4 +1,4 @@
-import Button from '@/components/ui/button/raw-button'
+import Button from '@/components/ui/button/index'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import useTranslations from '@/i18n/translations'
@@ -20,7 +20,7 @@ export default function Solutions() {
     <Container className="max-w-full px-10 py-20">
       <Container className="">
         <Wrapper className="mb-10 text-center">
-          <h6 className="font-semibold mb-1">Serviços</h6>
+          <h6 className="font-semibold mb-1">{services.subtitle}</h6>
           <h2 className="text-4xl font-bold  mb-2 leading-normal">{services.title}</h2>
         </Wrapper>
 
@@ -39,7 +39,9 @@ export default function Solutions() {
                 <h3 className="text-2xl font-semibold mb-2">{title}</h3>
                 <p className="mb-3">{text}</p>
 
-                <Button className="px-4 py-2 bg-primary-500 rounded-md">Saber mais</Button>
+                <Button.Primary className="px-4 py-2 rounded-md">
+                  {services.buttonLabel}
+                </Button.Primary>
               </div>
 
               <div className="z-10 absolute bottom-10 py-4 text-white h-fit top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  group-hover:translate-x-[100vw] opacity-100  group-hover:opacity-0   transition-all duration-500 ease-in-out">
@@ -50,20 +52,18 @@ export default function Solutions() {
         </Wrapper>
 
         <Wrapper className="flex w-full flex-wrap justify-center gap-8 lg:hidden">
-          {images.map((service, index) => (
+          {services.items.map(({ text, title }, index) => (
             <div
               className="max-w-[400px] w-full bg-white overflow-hidden rounded-lg shadow-md shadow-black hover:scale-110"
-              key={service}
+              key={index}
             >
               <img src="/building.webp" className="" alt="" />
               <div className="px-4 py-4">
-                <p className="font-semibold text-lg mb-3">Serviço {index + 1}</p>
-                <p className="line-clamp-3 font-light mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi praesentium dicta
-                  nemo alias cumque suscipit sint assumenda possimus? Temporibus quidem hic optio a
-                  quo pariatur praesentium dolore magnam. Porro, consectetur.
-                </p>
-                <Button className="px-4 py-2 bg-primary-500 rounded-md ml-auto">Saber mais</Button>
+                <p className="font-semibold text-lg mb-3">{title}</p>
+                <p className="line-clamp-3 font-light mb-2">{text}</p>
+                <Button.Primary className="px-4 py-2 text-white rounded-md ml-auto">
+                  {services.buttonLabel}
+                </Button.Primary>
               </div>
             </div>
           ))}

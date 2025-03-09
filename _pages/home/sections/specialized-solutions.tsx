@@ -9,7 +9,7 @@ export default function SpecializedSolutions({ lang }: { lang: 'pt' | 'en' }) {
   } = useTranslations(lang)
 
   return (
-    <Container className="py-20 w-full px-5">
+    <Container className="pb-20 w-full px-5">
       <div className="container flex-col items-center max-w-[1280px] mx-auto flex  gap-12 lg:flex-row">
         <div className="relative w-full max-w-[600px] h-[400px]">
           <img

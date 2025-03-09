@@ -1,13 +1,10 @@
 import Wrapper from './ui/wrapper'
-import NavigationMenu from './navigation-menu'
 import Link from 'next/link'
 import { RiInstagramFill, RiLinkedinBoxFill, RiWhatsappFill, RiYoutubeFill } from 'react-icons/ri'
+import useTranslations from '@/i18n/translations'
 
 const Footer = () => {
-  const items = [
-    { label: 'Para sua Empresa', link: '' },
-    { label: 'Para o Agro', link: '' }
-  ]
+  const { socialMedias } = useTranslations('pt')
 
   return (
     <footer className="bg-gradient-to-r from-secondary-900 to-primary-900 text-white py-10">
@@ -23,7 +20,7 @@ const Footer = () => {
           <Link href="/" className="">
             Inicio
           </Link>
-          <NavigationMenu label="Serviços" items={items} />
+          <Link href="/servicos">Serviços</Link>
           <Link href="/quem-somos">Quem Somos</Link>
           <Link href="/contato">Contato</Link>
         </Wrapper>
@@ -32,16 +29,32 @@ const Footer = () => {
           <div>
             <h4 className="text-center text-lg font-semibold mb-2 lg:text-left">Siga-nos</h4>
             <div className="flex gap-3">
-              <Link href="/" className="p-2 bg-white rounded-full text-secondary-500">
+              <Link
+                href={socialMedias.instagram}
+                target="_blank"
+                className="p-2 bg-white rounded-full text-secondary-500"
+              >
                 <RiInstagramFill />
               </Link>
-              <Link href="/" className="p-2 bg-white rounded-full text-secondary-500">
+              <Link
+                href={socialMedias.linkedin}
+                target="_blank"
+                className="p-2 bg-white rounded-full text-secondary-500"
+              >
                 <RiLinkedinBoxFill />
               </Link>
-              <Link href="/" className="p-2 bg-white rounded-full text-secondary-500">
+              <Link
+                href={socialMedias.youtube}
+                target="_blank"
+                className="p-2 bg-white rounded-full text-secondary-500"
+              >
                 <RiYoutubeFill />
               </Link>
-              <Link href="/" className="p-2 bg-white rounded-full text-secondary-500">
+              <Link
+                href={socialMedias.whatsapp}
+                target="_blank"
+                className="p-2 bg-white rounded-full text-secondary-500"
+              >
                 <RiWhatsappFill />
               </Link>
             </div>

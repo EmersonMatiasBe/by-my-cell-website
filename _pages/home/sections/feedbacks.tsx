@@ -5,71 +5,23 @@ import {
   CarouselNext,
   CarouselPrevious
 } from '@/components/ui/carousel'
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger
+} from '@/components/ui/dialog'
 import Container from '@/components/ui/container'
+import useTranslations from '@/i18n/translations'
 
 export default function Feedbacks() {
-  const reviews = [
-    {
-      name: 'Maria Silva',
-      role: 'Produtora Agrícola',
-      review:
-        'Os serviços são excepcionais! A análise detalhada do solo ajudou a melhorar minha colheita. Recomendo a todos.',
-      rating: 5,
-      avatar: '/avatar1.jpg'
-    },
-    {
-      name: 'Carlos Santos',
-      role: 'Pesquisador',
-      review:
-        'A precisão das análises e o suporte técnico são impecáveis. Me ajudaram muito no meu projeto de biologia.',
-      rating: 4,
-      avatar: '/avatar2.jpg'
-    },
-    {
-      name: 'Ana Costa',
-      role: 'Engenheira Ambiental',
-      review:
-        'Serviço de alta qualidade, com resultados rápidos e confiáveis. A equipe é muito atenciosa.',
-      rating: 5,
-      avatar: '/avatar3.jpg'
-    },
-    {
-      name: 'Ana Costa',
-      role: 'Engenheira Ambiental',
-      review:
-        'Serviço de alta qualidade, com resultados rápidos e confiáveis. A equipe é muito atenciosa.',
-      rating: 5,
-      avatar: '/avatar3.jpg'
-    },
-    {
-      name: 'Carlos Santos',
-      role: 'Pesquisador',
-      review:
-        'A precisão das análises e o suporte técnico são impecáveis. Me ajudaram muito no meu projeto de biologia.',
-      rating: 4,
-      avatar: '/avatar2.jpg'
-    },
-    {
-      name: 'Ana Costa',
-      role: 'Engenheira Ambiental',
-      review:
-        'Serviço de alta qualidade, com resultados rápidos e confiáveis. A equipe é muito atenciosa.',
-      rating: 5,
-      avatar: '/avatar3.jpg'
-    },
-    {
-      name: 'Ana Costa',
-      role: 'Engenheira Ambiental',
-      review:
-        'Serviço de alta qualidade, com resultados rápidos e confiáveis. A equipe é muito atenciosa.',
-      rating: 5,
-      avatar: '/avatar3.jpg'
-    }
-  ]
+  const { feedbacks } = useTranslations('pt')
 
   return (
-    <Container className="py-20 my-20 max-w-full h-[600px] md:h-[500px] shadow-lg overflow-hidden relative">
-      <div className="px-4 sm:px-6 lg:px-12 absolute top-10 absolute-center-x z-10 w-full text-black md:text-white">
+    <Container className="py-20 my-20 max-w-full  shadow-lg overflow-hidden relative">
+      <div className="px-4 sm:px-6 lg:px-12 z-10 w-full text-black md:text-white">
         <h6 className="font-semibold mb-3 text-center">Avaliações</h6>
         <h2 className="text-4xl font-bold text-center leading-normal">
           A <span className="font-bold bg-green-500 p-2">Satisfação</span>
@@ -77,15 +29,28 @@ export default function Feedbacks() {
         </h2>
       </div>
 
-      <div className="px-4 sm:px-6 lg:px-12 absolute left-0 top-[38%] z-10 w-full">
+      <div className="px-4 sm:px-6 lg:px-12  w-full">
         <Carousel>
           <CarouselContent className="p-5">
-            {reviews.map(({ name, role, review }, index) => (
+            {feedbacks.map(({ client, feedback, position }, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="bg-white h-full rounded-lg shadow-black shadow-md  p-6 flex flex-col items-center text-center">
-                  <h3 className="text-xl font-semibold text-secondary-500">{name}</h3>
-                  <p className="text-sm text-gray-500 mb-4">{role}</p>
-                  <p className="text-gray-700 mb-4">{review}</p>
+                  <h3 className="text-xl font-semibold text-secondary-500">{client}</h3>
+                  <p className="text-sm text-gray-500 mb-4">{position}</p>
+                  <p className="text-gray-700 mb-4 line-clamp-4">{feedback}</p>
+                  <Dialog>
+                    <DialogTrigger className="bg-secondary-500 px-5 py-5 text-white w-full max-w-[600px] mx-auto font-semibold rounded-lg">
+                      Ver avaliação completa
+                    </DialogTrigger>
+                    <DialogContent className="w-fit max-w-[400px] min-w-[90%] md:min-w-0">
+                      <DialogHeader>
+                        <DialogTitle className="text-secondary-500 text-2xl">{client}</DialogTitle>
+                        <DialogDescription className="text-gray-700 text-lg  font-thin max-h-[80dvh] overflow-y-auto">
+                          {feedback}
+                        </DialogDescription>
+                      </DialogHeader>
+                    </DialogContent>
+                  </Dialog>
                 </div>
               </CarouselItem>
             ))}
@@ -95,7 +60,7 @@ export default function Feedbacks() {
         </Carousel>
       </div>
 
-      <div className="absolute w-full h-full -bottom-10 md:bottom-0 left-0">
+      <div className="absolute w-full h-full -bottom-10 md:bottom-0 left-0 -z-10">
         <img src="/bg-feedbacks.png" className="w-full h-full object-cover object-bottom" alt="" />
       </div>
     </Container>

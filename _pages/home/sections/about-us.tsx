@@ -6,7 +6,7 @@ import useTranslations from '@/i18n/translations'
 export default function AboutUs() {
   const {
     home: {
-      aboutUs: { title, subtitle, text, buttonLabel }
+      aboutUs: { title, subtitle, text, buttonLabel, subtitle2 }
     }
   } = useTranslations('pt')
 
@@ -23,7 +23,7 @@ export default function AboutUs() {
       </Wrapper>
 
       <Wrapper className="w-full lg:w-1/2">
-        <h6 className="text-center font-semibold mb-2 lg:text-left">Quem Somos</h6>
+        <h6 className="text-center font-semibold mb-2 lg:text-left">{subtitle2}</h6>
         <h2 className="text-center text-4xl font-bold  mb-2 lg:text-left leading-normal">
           {title}
         </h2>

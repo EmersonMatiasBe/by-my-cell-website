@@ -20,9 +20,9 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
 
       <Partners />
 
-      <SpecializedSolutions lang={lang} />
-
       <Solutions />
+
+      <SpecializedSolutions lang={lang} />
 
       <Steps />
 

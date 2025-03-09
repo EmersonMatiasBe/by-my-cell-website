@@ -35,9 +35,10 @@ const home = {
   services: {
     title: (
       <>
-        Conheça nossos <br></br> <span className="p-2 bg-secondary-500 text-white">Serviços</span>
+        Conheça nossos <span className="p-2 bg-secondary-500 text-white">Serviços</span>
       </>
     ),
+    subtitle: 'Serviços',
     items: [
       {
         title: 'Análise de microbiota',
@@ -59,7 +60,9 @@ const home = {
         title: ' Bioinformática',
         text: 'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas'
       }
-    ]
+    ],
+    buttonLabel: 'Saber mais',
+
   },
   ebook: {
     title: (
@@ -70,7 +73,13 @@ const home = {
     ),
     description:
       'Preparamos um e-book com informações sobre os microrganismos benéficos e patogênicos mais relevantes para o solo.',
-    link: 'https://lp.bymycell.com.br/ebook-microrganismos'
+    link: 'https://lp.bymycell.com.br/ebook-microrganismos',
+    downloadEbook: {
+      title: 'Sobre o eBook',
+      description:
+        'Para receber o eBook diretamente no seu e-mail, clique no botão abaixo e preencha as informações.',
+        buttonLabel: 'Baixe agora mesmo'
+    }
   },
   aboutUs: {
     title: (
@@ -80,10 +89,24 @@ const home = {
       </>
     ),
     subtitle: 'Entenda o que os move e nos torna únicos.',
+    subtitle2: 'Quem Somos',
     text: 'Buscamos simplificar o acesso à genômica de alto nível no Brasil, fornecendo aos clientes serviços relevantes de forma rápida e a preços acessíveis. Temos um laboratório próprio e controle de todo o processo de análise dos dados para atender nossos clientes da melhor maneira possível. Venha conhecer a ByMyCell e nossa equipe de especialistas!',
     buttonLabel: 'Quem Somos'
+  },
+  blackgenn: {
+    title:'Engenharia de Proteínas e Metabolômica',
+    text: 'Nossa plataforma BlackGenn é dedicada à prospecção e engenharia de proteínas e de microrganismos, combinando a fronteira de conhecimento de genômica, metabolômica e computação de alto desempenho para acelerar a biotecnologia no Brasil.',
+    labelButton: 'Plataforma BlackGenn',
+    link: 'https://blackgenn.com/'
+  },
+  bymysoil: {
+    title: "Análise genômica para agricultura de precisão",
+    text: 'Nossa plataforma ByMySoil é especializada no mapeamento de microrganismos de solo, visando redução nos riscos de doenças, otimização do uso de bioinusmos e ganho de produtividade na sua lavoura. Com base em análises laboratoriais e dados agronômicos, a plataforma oferece recomendações para um manejo assertivo e sustentável da terra.',
+    labelButton: 'Plataforma ByMySoil',
+    link: 'https://bymysoil.com.br/'
   }
 }
+
 const header = [
   { label: 'Inicio', href: '/', items: null },
   {
@@ -302,13 +325,47 @@ const services = {
   }
 }
 
+const feedbacks = [
+  {
+    client: 'Professor Dr. Marcos Rogério André',
+    position: 'UNESP Jaboticabal',
+    feedback:
+      'Excelente serviço de sequenciamento de microbioma e suporte impecável, fundamentais para o avanço das pesquisas do nosso grupo sobre microbioma de ectoparasitas. Recomendo a todos os pesquisadores que buscam excelência em sequenciamento.'
+  },
+  {
+    client: 'Sabrina Condi',
+    position: 'Empresa BioSab',
+    feedback:
+      'Os serviços têm sido essenciais no nosso dia a dia. Com tecnologia avançada e expertise científica, fornecem dados confiáveis de forma ágil e personalizada, garantindo uma tomada de decisão mais eficiente nos processos em que atuamos.'
+  },
+  {
+    client: 'Alexandre Santos',
+    position: 'Empresa Fertale',
+    feedback:
+      'A análise microbiana do solo tem sido uma verdadeira revolução na nossa maneira de abordar a agricultura sustentável. Ao estudar a diversidade dos microrganismos do solo, conseguimos melhorar sua saúde e mitigar os riscos causados pelos patógenos, agindo de forma rápida e precisa. Utilizando estratégias de controle biológico que evitam o uso de produtos químicos.'
+  },
+  {
+    client: 'Daniel Mol',
+    position: 'Consultor Agrícola',
+    feedback:
+      'Metagenômica é uma ferramenta importante para o manejo regenerativo, digo que é um zoom sobre o que não conseguimos enxergar a olho nu, e identificar a diversidade e a funcionalidade das comunidades microbianas presentes no solo. Ao analisar o DNA presente em amostras de talhões produtivos, podemos identificar os microrganismos benéficos e os maléficos, e assim tomar a melhor decisão do manejo a ser utilizado! Junto a ByMyCell e seus colaboradores, podemos compreender a composição e atividade microbiana, otimizando o melhor posicionamento a ser realizado. Além disso, a metagenômica ajuda a monitorar o impacto das recomendações e permite corrigir ou manter o manejo de forma mais eficaz e sustentável!'
+  },
+  {
+    client: 'Jackson Bedin',
+    position: 'Produtor Rural',
+    feedback:
+      'As análises são excelentes. Estão ajudando muito a direcionar os manejos biológicos nas nossas áreas. Conseguimos diagnosticar os principais patógenos e também os micro-organismos benéficos em cada área. O aplicativo também ajuda muito. Tem muitas informações e é bem simples e intuitivo de utilizar. O suporte técnico também é maravilhoso. Estamos muito satisfeitos.'
+  }
+]
+
 const messagesPt = {
   header,
   home,
   contact,
   socialMedias,
   aboutUs,
-  services
+  services,
+  feedbacks
 }
 
 export default messagesPt

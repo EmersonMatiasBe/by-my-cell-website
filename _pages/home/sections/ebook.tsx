@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function Ebook() {
   const {
     home: {
-      ebook: { title, description, link }
+      ebook: { title, description, link, downloadEbook }
     }
   } = useTranslations('pt')
 
@@ -24,17 +24,14 @@ export default function Ebook() {
           </div>
 
           <div className="w-full lg:w-1/2 flex flex-col justify-center text-center">
-            <h3 className="text-2xl font-semibold  mb-4">Sobre o eBook</h3>
+            <h3 className="text-2xl font-semibold  mb-4">{downloadEbook.title}</h3>
             <p className="mb-6">{description}</p>
 
             <div className="bg-white p-8 py-20 rounded-lg shadow-xl">
-              <p className="text-lg text-black mb-4">
-                Para receber o eBook diretamente no seu e-mail, clique no botão abaixo e preencha as
-                informações.
-              </p>
+              <p className="text-lg text-black mb-4">{downloadEbook.description}</p>
               <Link href={link}>
                 <button className="bg-primary-500 text-white py-3 px-6 rounded-lg font-semibold hover:bg-primary-600 transition-all duration-300 w-full">
-                  Quero meu eBook
+                  {downloadEbook.buttonLabel}
                 </button>
               </Link>
             </div>
