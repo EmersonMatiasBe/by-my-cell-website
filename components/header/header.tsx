@@ -20,7 +20,7 @@ export default function Header({ lang }: { lang: 'pt' | 'en' }) {
   return (
     <header
       data-location={location}
-      className={`${location === '/aa' && 'bg-gradient-to-r from-[#355184] to-[#00b04f]'}  h-[80px] w-full fixed bg-gradient-to-r from-[#355184] to-[#00b04f]  left-0 right-0  z-50`}
+      className="h-[80px] w-full fixed bg-gradient-to-bl from-primary-500  to-secondary-500  left-0 right-0  z-50"
     >
       <Container className="w-full text-white h-full px-5 flex justify-between items-center">
         <Wrapper className="w-[120px] sm:w-[200px]  flex h-full relative">

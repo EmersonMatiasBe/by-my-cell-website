@@ -129,6 +129,140 @@ const contact = {
   socialMedias: 'Nossas Redes Sociais'
 }
 
+const aboutUs = {
+  title: 'Quem Somos',
+  text: [
+    'A ByMyCell é uma startup brasileira de biotecnologia dedicada a simplificar o acesso à genômica no Brasil e na América Latina. Com sede em Ribeirão Preto - São Paulo, a empresa foi fundada em 2021.',
+    'Especializada em soluções para o agronegócio e para a pesquisa, a ByMyCell desenvolve tecnologias avançadas para análise de microrganismos de amostras biológicas, utilizando sequenciamento de DNA de nova geração. Sua principal plataforma, a ByMySoil, lançada no início de 2023, auxilia produtores rurais na identificação e mensuração da diversidade microbiana do solo, promovendo aumento de produtividade e redução no uso de fertilizantes e pesticidas químicos.',
+    'Além disso, a empresa oferece serviços como análise de microbiota, sequenciamento completo de genomas de bactérias e fungos, metagenômica shotgun e bioinformática sob demanda, desenvolvendo pipelines customizadas para análises de dados em diferentes plataformas de sequenciamento. A ByMyCell também conta com sua spin-off BlackGenn, focada na prospecção e engenharia de proteínas e microrganismos, combinando genômica, metabolômica e computação de alto desempenho para acelerar a biotecnologia no Brasil.',
+    'Na ByMyCell, somos movidos pela curiosidade científica e pela paixão por transformar conhecimento em soluções reais. Acreditamos que a biotecnologia tem o poder de revolucionar mercados, tornando processos mais sustentáveis, produtivos e inovadores.',
+    'O que nos torna únicos é a combinação de tecnologia de ponta, pesquisa aplicada e um olhar estratégico para os desafios do presente e do futuro. Desenvolvemos soluções genômicas avançadas para o agronegócio, a biotecnologia industrial e as pesquisas científicas, oferecendo respostas precisas e personalizadas, em equipe qualificada de mestres, doutores e especialistas.',
+    'Nossa essência está na conexão entre ciência e tecnologia. Unimos inovação e acessibilidade para que produtores, pesquisadores e empresas tenham em mãos o que há de mais moderno em análise biológica. Mais do que dados, entregamos inteligência para impulsionar decisões e transformar realidades.',
+    'Esse é o nosso propósito. Esse é o DNA da ByMyCell.'
+  ],
+  teamSection: {
+    title: 'Conheça Nossa Equipe',
+    team: [
+      {
+        title: 'Diretoria',
+        members: [
+          {
+            name: 'Rafael Silva Rocha',
+            linkedin: 'https://www.linkedin.com/in/rafael-silva-rocha-5312b835/',
+            position: 'Fundador'
+          },
+          {
+            name: 'Stela Virgíllio',
+            linkedin: 'https://www.linkedin.com/in/stela-virgilio-250267212/',
+            position: 'Co-fundadora'
+          }
+        ]
+      },
+      {
+        title: 'Laboratório',
+        members: [
+          {
+            name: 'Gabriela Condé',
+            linkedin: 'https://www.linkedin.com/in/gabriela-cond%C3%A9-b6043920a/',
+            position: ''
+          },
+          {
+            name: 'Jéssica Ellen Lima',
+            linkedin: 'https://www.linkedin.com/in/jessicaellenlima/',
+            position: ''
+          },
+          {
+            name: 'Lucas Lorenzon',
+            linkedin: 'https://www.linkedin.com/in/lucas-lorenzon-645a5615a/ ',
+            position: ''
+          },
+          {
+            name: 'Tânia Petta ',
+            linkedin: 'https://www.linkedin.com/in/t%C3%A2nia-petta-8b39b961/ ',
+            position: ''
+          },
+          ,
+          {
+            name: 'Victória Zucheratto ',
+            linkedin: 'https://www.linkedin.com/in/victoria-zucherato/ ',
+            position: ''
+          }
+        ]
+      },
+      {
+        title: 'Bioinformática',
+        members: [
+          {
+            name: 'Adriano Gomes',
+            linkedin: 'https://www.linkedin.com/in/adriano-gomes-silva/',
+            position: ''
+          },
+          {
+            name: 'Deivison Costa',
+            linkedin: 'https://www.linkedin.com/in/deivison-costa/',
+            position: ''
+          },
+          {
+            name: 'Gabriel Novais',
+            linkedin: 'https://www.linkedin.com/in/gabriel-novais-guarnieri/',
+            position: ''
+          },
+          {
+            name: 'Lucas Pádua',
+            linkedin: 'https://www.linkedin.com/in/lucas-p%C3%A1dua-3a2b0a227/',
+            position: ''
+          },
+          {
+            name: 'Maria Bruna Pilotto',
+            linkedin: 'https://www.linkedin.com/in/mbpilotto/',
+            position: ''
+          },
+          {
+            name: 'Vinícius Castro',
+            linkedin: 'https://www.linkedin.com/in/vinicius-castro-santos/',
+            position: ''
+          }
+        ]
+      },
+      {
+        title: 'Marketing e Vendas',
+        members: [
+          {
+            name: 'Anna Paula Tojal',
+            linkedin: 'https://www.linkedin.com/in/annannapaula/',
+            position: ''
+          },
+          {
+            name: 'Carolina Santos',
+            linkedin: 'https://www.linkedin.com/in/carolina-santos-ba4b3b24a/',
+            position: ''
+          },
+          {
+            name: 'Érika Cerqueira',
+            linkedin: 'https://www.linkedin.com/in/%C3%A9rika-cerqueira-b6765b259/',
+            position: ''
+          },
+          {
+            name: 'Rodrigo Barros',
+            linkedin: 'https://www.instagram.com/representantecrb/',
+            position: ''
+          }
+        ]
+      },
+      {
+        title: 'Gestão de Pessoas',
+        members: [
+          {
+            name: 'Bianca Gadini',
+            linkedin: 'https://www.linkedin.com/in/bianca-gadini/ ',
+            position: ''
+          }
+        ]
+      }
+    ]
+  }
+}
+
 const socialMedias = {
   linkedin: 'https://www.linkedin.com/company/bymycell',
   instagram: 'https://www.instagram.com/bymycell/',
@@ -140,7 +274,8 @@ const messagesEn = {
   header,
   home,
   contact,
-  socialMedias
+  socialMedias,
+  aboutUs
 }
 
 export default messagesEn
