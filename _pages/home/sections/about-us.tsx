@@ -18,6 +18,7 @@ export default function AboutUs() {
           src="/building.webp"
           alt="Foto de um prédio"
           sizes="100%"
+          loading="lazy"
         />
       </Wrapper>
 

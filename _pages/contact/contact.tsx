@@ -225,7 +225,7 @@ export default function Contact() {
       </Wrapper>
 
       <Wrapper className="w-full h-dvh fixed top-0 left-0 -z-10 brightness-[0.2] bg-white">
-        <img src="/plantation.jpg" className="w-full h-full" alt="" />
+        <img src="/plantation.jpg" className="w-full h-full" alt="" loading="lazy" />
       </Wrapper>
 
       <FloatingHeader />

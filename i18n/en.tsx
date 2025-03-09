@@ -270,12 +270,28 @@ const socialMedias = {
   whatsapp: ''
 }
 
+const services = {
+  title: 'Nossos Serviços',
+  subtitle: 'Escolha a área que mais te representa',
+  search: {
+    title: 'Para PESQUISA',
+    subtitle: 'Conheça os nossos serviços para acelerar a sua Pesquisa Científica',
+    labelButton: 'Conhecer Serviços para Pesquisa'
+  },
+  agro: {
+    title: 'Para o AGRO',
+    subtitle: 'Conheça os nossos serviços de análises para o Agro',
+    labelButton: 'Conhecer Serviços para o AGRO'
+  }
+}
+
 const messagesEn = {
   header,
   home,
   contact,
   socialMedias,
-  aboutUs
+  aboutUs,
+  services
 }
 
 export default messagesEn
