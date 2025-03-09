@@ -20,6 +20,7 @@ export default function Ebook() {
               src="https://marketplace.canva.com/EAEzk42Bb0I/1/0/1024w/canva-ebook-sobre-neg%C3%B3cios---capa-com-p%C3%A1ginas-JnnZp_G-I5c.jpg"
               alt="Ebook sobre Análise de Solo"
               className="w-full h-full object-contain rounded-lg"
+              loading="lazy"
             />
           </div>
 
@@ -40,7 +41,12 @@ export default function Ebook() {
       </div>
 
       <div className="absolute top-0 left-0 w-full h-full">
-        <img src="building.webp" alt="" className="object-cover brightness-[0.2] w-full h-full" />
+        <img
+          src="building.webp"
+          alt=""
+          className="object-cover brightness-[0.2] w-full h-full"
+          loading="lazy"
+        />
       </div>
     </Container>
   )

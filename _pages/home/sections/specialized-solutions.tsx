@@ -16,6 +16,7 @@ export default function SpecializedSolutions({ lang }: { lang: 'pt' | 'en' }) {
             src="/building.webp"
             alt="Serviços para Agricultura"
             className="w-full h-full rounded-lg shadow-lg object-cover"
+            loading="lazy"
           />
 
           <div className="absolute absolute-center-x h-fit flex flex-col p-6 bg-white bg-opacity-90 rounded-lg shadow-md w-[90%] bottom-8">
@@ -32,6 +33,7 @@ export default function SpecializedSolutions({ lang }: { lang: 'pt' | 'en' }) {
             src="/building.webp"
             alt="Serviços para Pesquisadores"
             className="w-full h-full rounded-lg shadow-lg object-cover"
+            loading="lazy"
           />
           <div className="absolute absolute-center-x  h-fit flex flex-col p-6 bg-white bg-opacity-90 rounded-lg shadow-md w-[90%] bottom-8 ">
             <h2 className="text-2xl md:text-4xl font-bold mb-2 text-secondary-500">

@@ -20,6 +20,7 @@ export default function AgroServices() {
               src="/building.webp"
               alt="Nossa Empresa"
               className="rounded-xl w-full h-full object-contain"
+              loading="lazy"
             />
           </div>
 
@@ -48,7 +49,12 @@ export default function AgroServices() {
       </div>
 
       <Wrapper className="w-full h-[50dvh] absolute top-0 left-0 -z-10">
-        <img src="/building.webp" className="w-full h-full object-cover brightness-[0.3]" alt="" />
+        <img
+          src="/building.webp"
+          className="w-full h-full object-cover brightness-[0.3]"
+          alt=""
+          loading="lazy"
+        />
       </Wrapper>
 
       <FloatingHeader />

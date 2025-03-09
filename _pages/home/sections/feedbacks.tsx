@@ -61,7 +61,12 @@ export default function Feedbacks() {
       </div>
 
       <div className="absolute w-full h-full -bottom-10 md:bottom-0 left-0 -z-10">
-        <img src="/bg-feedbacks.png" className="w-full h-full object-cover object-bottom" alt="" />
+        <img
+          src="/bg-feedbacks.png"
+          className="w-full h-full object-cover object-bottom"
+          alt=""
+          loading="lazy"
+        />
       </div>
     </Container>
   )

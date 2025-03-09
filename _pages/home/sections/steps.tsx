@@ -42,7 +42,7 @@ export default function Steps() {
         </div>
 
         <div className="w-full h-auto overflow-hidden hidden lg:block ">
-          <img src="/building.webp" className="w-full h-full object-cover" alt="" />
+          <img src="/building.webp" className="w-full h-full object-cover" alt="" loading="lazy" />
         </div>
       </Wrapper>
     </Container>

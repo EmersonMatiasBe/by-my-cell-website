@@ -12,7 +12,12 @@ export default function OtherServices() {
   return (
     <Container className="max-w-full flex flex-col gap-20 py-20">
       <Wrapper className="w-[95%] h-[500px] rounded-r-3xl relative overflow-hidden shadow-xl shadow-black">
-        <img src="/bg-home.jpg" className="w-full h-full object-cover brightness-[0.2]" alt="" />
+        <img
+          src="/bg-home.jpg"
+          className="w-full h-full object-cover brightness-[0.2]"
+          alt=""
+          loading="lazy"
+        />
         <div className="absolute  pl-5 bottom-10 right-10 text-white">
           <h6 className="text-primary-300 font-bold text-xl lg:text-3xl mb-1">{bymysoil.title}</h6>
           <p className="text-sm md:text-base font-light max-w-[600px] mb-8">{bymysoil.text}</p>
@@ -24,7 +29,12 @@ export default function OtherServices() {
       </Wrapper>
 
       <Wrapper className="w-[80%] h-[500px] rounded-l-3xl relative overflow-hidden ml-auto shadow-xl shadow-black">
-        <img src="/building.webp" className="w-full h-full object-cover brightness-[0.2]" alt="" />
+        <img
+          src="/building.webp"
+          className="w-full h-full object-cover brightness-[0.2]"
+          alt=""
+          loading="lazy"
+        />
         <div className="absolute bottom-10 left-10 text-white pr-5">
           <h6 className="text-secondary-300 font-bold text-xl mb-1 lg:text-3xl">
             {blackgenn.title}

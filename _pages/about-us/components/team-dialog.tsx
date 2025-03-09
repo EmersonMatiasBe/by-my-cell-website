@@ -42,6 +42,7 @@ export default function TeamDialog() {
                           src="/building.webp"
                           alt={member?.name}
                           className="w-24 h-24 rounded-full object-cover mb-4"
+                          loading="lazy"
                         />
                         <h3 className="text-xl font-semibold text-gray-800">{member?.name}</h3>
                         <p className="text-sm text-gray-600">{member?.position}</p>

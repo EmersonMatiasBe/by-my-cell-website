@@ -61,8 +61,7 @@ const home = {
         text: 'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas'
       }
     ],
-    buttonLabel: 'Saber mais',
-
+    buttonLabel: 'Saber mais'
   },
   ebook: {
     title: (
@@ -78,7 +77,7 @@ const home = {
       title: 'Sobre o eBook',
       description:
         'Para receber o eBook diretamente no seu e-mail, clique no botão abaixo e preencha as informações.',
-        buttonLabel: 'Baixe agora mesmo'
+      buttonLabel: 'Baixe agora mesmo'
     }
   },
   aboutUs: {
@@ -94,13 +93,13 @@ const home = {
     buttonLabel: 'Quem Somos'
   },
   blackgenn: {
-    title:'Engenharia de Proteínas e Metabolômica',
+    title: 'Engenharia de Proteínas e Metabolômica',
     text: 'Nossa plataforma BlackGenn é dedicada à prospecção e engenharia de proteínas e de microrganismos, combinando a fronteira de conhecimento de genômica, metabolômica e computação de alto desempenho para acelerar a biotecnologia no Brasil.',
     labelButton: 'Plataforma BlackGenn',
     link: 'https://blackgenn.com/'
   },
   bymysoil: {
-    title: "Análise genômica para agricultura de precisão",
+    title: 'Análise genômica para agricultura de precisão',
     text: 'Nossa plataforma ByMySoil é especializada no mapeamento de microrganismos de solo, visando redução nos riscos de doenças, otimização do uso de bioinusmos e ganho de produtividade na sua lavoura. Com base em análises laboratoriais e dados agronômicos, a plataforma oferece recomendações para um manejo assertivo e sustentável da terra.',
     labelButton: 'Plataforma ByMySoil',
     link: 'https://bymysoil.com.br/'
@@ -358,6 +357,77 @@ const feedbacks = [
   }
 ]
 
+const search = {
+  title: 'Serviços para Pesquisadores',
+  subtitle:
+    'Nossa metodologia permite que pesquisadores e cientistas de empresas, institutos e universidades acelerem suas pesquisas genômicas para identificação de microrganismos em amostras biológicas como material fermentado, bioinsumos, fezes, rúmen, solo, outros. Além de material bruto, também aceitamos DNAs já extraídos.',
+  items: [
+    {
+      title: 'Análise de Microbiota',
+      subtitle: 'Identificação de microrganismos em amostras complexas',
+      image: '/analise-de-microbiota.webp',
+      link: 'analise-de-microbiota'
+    },
+    {
+      title: ' Identificação de Microrganismos',
+      subtitle: 'Identificação de isolado microbiano',
+      image: '/identificacao-de-microrganismos.webp',
+      link: 'identificacao-de-microrganismos'
+    },
+    {
+      title: 'Sequenciamento de Genomas de Bactérias',
+      subtitle: 'Genoma completo bacteriano ',
+      image: '/sequenciamento-de-genomas-de-bacterias.webp',
+      link: 'sequenciamento-de-genomas-de-bacterias'
+    },
+    {
+      title: 'Sequenciamento de Genomas de Fungos e Leveduras',
+      subtitle: 'Genoma completo fúngico',
+      image: '/analise-de-microbiota.webp',
+      link: 'identificacao-de-microrganismos'
+    },
+    {
+      title: 'Metagenômica Shotgun',
+      subtitle: 'Montagem, anotação e identificação de microrganismos em amostras complexas',
+      image: '/analise-de-microbiota.webp',
+      link: 'identificacao-de-microrganismos'
+    },
+    {
+      title: 'Bioinformática',
+      subtitle: ' Análise de bioinformática sob demanda',
+      image: '/bioinformatica.webp',
+      link: 'bioinformatica'
+    }
+  ]
+}
+
+const teste = {
+  'analise-de-microbiota': {
+    title: 'Análise de Microbiota',
+    description:
+      'Serviço voltado para pesquisadores, empresas de biológicos, On Farm e demais que desejam analisar a composição bacteriana e fúngica de suas amostras. Trabalhamos com as plataformas Illumina (short reads) e Oxford Nanopore (long reads), entregando relatório, tabelas completas, análise de diversidade e predição de vias metabólicas.',
+    image: '/analise-de-microbiota.webp'
+  },
+  'identificacao-de-microrganismos': {
+    title: 'Identificação de Microrganismos',
+    description:
+      'Serviço voltado a clientes que querem identificar bactéria, fungo ou levedura a partir de cultura isolada, onde espera-se encontrar um único microrganismo. Trabalhamos com a plataforma Nanopore Oxford, entregando relatório com a identificação do microrganismo a nível de gênero e de espécie.',
+    image: '/identificacao-de-microrganismos.webp'
+  },
+  'sequenciamento-de-genomas-de-bacterias': {
+    title: 'Sequenciamento de Genomas de Bactérias',
+    description:
+      'Serviço voltado a pesquisadores em universidades e institutos e equipes de P&D em empresas, onde realizamos o sequenciamento completo de bactérias, entregando o genoma montado e anotado (com bioinformática completa). Trabalhamos com a plataforma Illumina e indicamos a montagem híbrida (Illumina + Nanopore Oxford) para fechar o genoma.',
+    image: '/sequenciamento-de-genomas-de-bacterias.webp'
+  },
+  bioinformatica: {
+    title: 'Bioinformática',
+    description:
+      'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas de sequenciamento.',
+    image: '/bioinformatica.webp'
+  }
+}
+
 const messagesPt = {
   header,
   home,
@@ -365,7 +435,9 @@ const messagesPt = {
   socialMedias,
   aboutUs,
   services,
-  feedbacks
+  feedbacks,
+  search,
+  teste
 }
 
 export default messagesPt

@@ -78,7 +78,12 @@ export default function Partners() {
         <div className="flex justify-between w-[3801.59px] px-20">
           {partners.map(({ urlImage, altImage, id }) => (
             <Wrapper className="w-[160px] h-[160px] w-min-[160px] h-min-[160px]" key={id}>
-              <img src={urlImage} alt={altImage} className="w-full h-full object-contain" />
+              <img
+                src={urlImage}
+                alt={altImage}
+                className="w-full h-full object-contain"
+                loading="lazy"
+              />
             </Wrapper>
           ))}
         </div>

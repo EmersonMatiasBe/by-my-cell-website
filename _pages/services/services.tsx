@@ -22,6 +22,7 @@ export default function Services() {
             src="/laboratory.jpg"
             className="w-full h-full object-cover brightness-50 md:brightness-[0.2] md:group-hover:brightness-50 absolute top-0 left-0 -z-10"
             alt=""
+            loading="lazy"
           />
 
           <div className="mt-5 md:mt-0 left-1/2 absolute -translate-x-1/2 top-1/2 -translate-y-1/2 flex flex-col w-full px-5">
@@ -46,6 +47,7 @@ export default function Services() {
             src="/onion-plantation.jpg"
             className="w-full h-full object-cover brightness-50 absolute top-0 left-0 -z-10 md:brightness-[0.2] md:group-hover:brightness-50 "
             alt=""
+            loading="lazy"
           />
 
           <div className="left-1/2 absolute -translate-x-1/2 top-1/2 -translate-y-1/2 flex flex-col w-full px-5">

@@ -16,7 +16,12 @@ export default function Results({ lang }: { lang: LanguageOptions }) {
         <h2 className="text-4xl font-bold mb-2 text-center md:text-left leading-normal">{title}</h2>
 
         <div className="w-full h-full max-w-[500px] mx-auto">
-          <img src="/seeding.png" alt="Muda de planta" className="h-full w-full object-cover" />
+          <img
+            src="/seeding.png"
+            alt="Muda de planta"
+            className="h-full w-full object-cover"
+            loading="lazy"
+          />
         </div>
       </Wrapper>
 

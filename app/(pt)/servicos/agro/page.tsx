@@ -25,7 +25,7 @@ export default function Agro() {
             className="w-full max-w-[600px] md:max-w-[400px] bg-white overflow-hidden rounded-lg"
             key={service}
           >
-            <img src="/building.webp" alt="" />
+            <img src="/building.webp" alt="" loading="lazy" />
             <div className="px-4 py-4">
               <p className="font-semibold text-primary-800 text-lg">
                 Serviço para o Agro {service}
@@ -44,7 +44,7 @@ export default function Agro() {
       </Wrapper>
 
       <Wrapper className="w-full h-dvh fixed top-0 left-0 -z-10 brightness-[0.2]">
-        <img src="/onion-plantation.jpg" className="w-full h-full" alt="" />
+        <img src="/onion-plantation.jpg" className="w-full h-full" alt="" loading="lazy" />
       </Wrapper>
 
       <FloatingHeader />

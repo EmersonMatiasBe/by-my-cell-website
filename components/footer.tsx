@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-secondary-900 to-primary-900 text-white py-10">
       <div className="container mx-auto flex flex-wrap justify-between items-center gap-10 px-5">
         <div className="flex flex-col items-center w-full gap-3 lg:w-[400px] lg:items-start">
-          <img src="/logo.png" alt="Company Logo" className="w-32 h-auto mb-3" />
+          <img src="/logo.png" alt="Company Logo" className="w-32 h-auto mb-3" loading="lazy" />
           <p className="text-sm max-w-xs text-center lg:text-left">
             Simplificando o acesso a tecnologia genômica no Brasil
           </p>
