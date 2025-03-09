@@ -89,23 +89,58 @@ const header = [
 ]
 
 const contact = {
-  title: 'Fale Conosco para Análises Genômicas',
+  title: (
+    <>
+      Fale Conosco Para <br></br>{' '}
+      <span className="p-2 bg-primary-500 text-white">Análises Genômicas</span>
+    </>
+  ),
   subtitle: 'Entre em Contato',
-  subtitle_2:
-    'Tire suas dúvidas, solicite orçamentos ou agende uma visita. Estamos aqui para ajudá-lo!',
+  subtitle_2: (
+    <>
+      Tire suas dúvidas, solicite orçamentos ou agende uma visita. <br></br>Estamos aqui para
+      ajudá-lo!
+    </>
+  ),
   contactInformations: {
+    title: 'Informações de Contato',
     address:
       'Endereço: Rua Martinico Prado 555. Piso Térreo. Vila Tibério. Ribeirão Preto - SP. 14050-050',
     phone: '+55 (16) 99466-4643',
     email: 'contato@bymycell.com',
     openingHours: 'Segunda a sexta, das 8 às 17h.'
-  }
+  },
+  boxMessage: {
+    title: 'Envie uma Mensagem',
+    fields: {
+      name: { name: 'Nome', placeholder: 'Digite seu nome' },
+      email: { name: 'E-mail', placeholder: 'seuemail@exemplo.com' },
+      phone: { name: 'Telefone', placeholder: '(00) 000000-0000' },
+      message: { name: 'Mensagem', placeholder: 'Escreva sua mensagem aqui...' }
+    },
+    permissionMessage:
+      'Ao selecionar esta caixa e enviar seus dados, você nos autoriza a te enviar e-mails. Você pode cancelar a qualquer momento.',
+    labelButton: 'Enviar Mensagem'
+  },
+  doubtBox: {
+    title: 'Ficou com alguma dúvida? Entre em Contato',
+    labelButton: 'Saber mais sobre a empresa'
+  },
+  socialMedias: 'Nossas Redes Sociais'
+}
+
+const socialMedias = {
+  linkedin: 'https://www.linkedin.com/company/bymycell',
+  instagram: 'https://www.instagram.com/bymycell/',
+  youtube: 'https://www.youtube.com/@ByMyCell',
+  whatsapp: ''
 }
 
 const messagesEn = {
   header,
   home,
-  contact
+  contact,
+  socialMedias
 }
 
 export default messagesEn

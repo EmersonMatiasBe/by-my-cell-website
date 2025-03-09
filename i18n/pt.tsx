@@ -94,10 +94,10 @@ const header = [
       { label: 'Para o Agro', link: '/servicos/agro' }
     ]
   },
-  { label: 'Quem Somos', href: 'quem-somos', items: null },
+  { label: 'Quem Somos', href: '/quem-somos', items: null },
   {
     label: 'Contato',
-    href: 'contato',
+    href: '/contato',
     items: [
       { label: 'Contato', link: 'contato' },
       { label: 'Trabalhe Conosco', link: '' }
@@ -120,18 +120,44 @@ const contact = {
     </>
   ),
   contactInformations: {
+    title: 'Informações de Contato',
     address:
       'Endereço: Rua Martinico Prado 555. Piso Térreo. Vila Tibério. Ribeirão Preto - SP. 14050-050',
     phone: '+55 (16) 99466-4643',
     email: 'contato@bymycell.com',
     openingHours: 'Segunda a sexta, das 8 às 17h.'
-  }
+  },
+  boxMessage: {
+    title: 'Envie uma Mensagem',
+    fields: {
+      name: { name: 'Nome', placeholder: 'Digite seu nome' },
+      email: { name: 'E-mail', placeholder: 'seuemail@exemplo.com' },
+      phone: { name: 'Telefone', placeholder: '(00) 000000-0000' },
+      message: { name: 'Mensagem', placeholder: 'Escreva sua mensagem aqui...' }
+    },
+    permissionMessage:
+      'Ao selecionar esta caixa e enviar seus dados, você nos autoriza a te enviar e-mails. Você pode cancelar a qualquer momento.',
+    labelButton: 'Enviar Mensagem'
+  },
+  doubtBox: {
+    title: 'Ficou com alguma dúvida? Entre em Contato',
+    labelButton: 'Saber mais sobre a empresa'
+  },
+  socialMedias: 'Nossas Redes Sociais'
+}
+
+const socialMedias = {
+  linkedin: 'https://www.linkedin.com/company/bymycell',
+  instagram: 'https://www.instagram.com/bymycell/',
+  youtube: 'https://www.youtube.com/@ByMyCell',
+  whatsapp: ''
 }
 
 const messagesPt = {
   header,
   home,
-  contact
+  contact,
+  socialMedias
 }
 
 export default messagesPt
