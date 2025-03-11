@@ -428,6 +428,116 @@ const teste = {
   }
 }
 
+const agro = {
+  title: 'Serviços para o Agro',
+  subtitle:
+    'Nossa metodologia permite conhecer os microrganismos de diferentes tipos de amostras de maneira eficiente e baseado na ciência.',
+  background: '/agro.webp',
+  items: [
+    {
+      title: 'Microrganismos do Solo e Nematoides',
+      subtitle:
+        'Conheça microrganismos e nematoides do solo da sua lavoura  e maneje o seu potencial.',
+      image: '/microrganismos-do-solo-e-nematoides.webp',
+      link: 'microrganismos-do-solo-e-nematoides'
+    },
+    {
+      title: 'Microbiota Geral',
+      subtitle: ' Identificação de microrganismos de diferentes amostras',
+      image: '/microrganismos.webp',
+      link: 'microbiota-geral'
+    },
+    {
+      title: 'Microbiota de Produto Biológico',
+      subtitle: 'Identificação de microrganismos de compostagem',
+      image: '/microbiota-de-produto-biologico.webp',
+      link: 'microbiota-de-produto-biologico'
+    },
+    {
+      title: 'Produção On Farm',
+      subtitle: ' Identificação de microrganismos de produção on farm.',
+      image: '/producao-on-farm.webp',
+      link: 'producao-on-farm'
+    },
+    {
+      title: 'Microbiota de Compostagem',
+      subtitle: ' Identificação de microrganismos de compostagem',
+      image: '/microbiota-de-compostagem.webp',
+      link: 'microbiota-de-compostagem'
+    },
+    {
+      title: 'Identificação de patógenos de plantas',
+      subtitle:
+        'Identificação de microrganismos causadores de doenças em diferentes partes da planta.',
+      image: '/identificacao-de-patogenos-de-plantas.webp',
+      link: 'identificacao-de-patogenos-de-plantas'
+    },
+    {
+      title: 'Identificação de Microrganismo Isolado',
+      subtitle: 'Identificação de microrganismos Isolados (Bactérias ou fungos)',
+      image: '/identificacao-de-microrganismo-isolado.webp',
+      link: 'identificacao-de-microrganismo-isolado'
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: '',
+      link: ''
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: '',
+      link: ''
+    }
+  ]
+}
+
+const agroServices = {
+  'microrganismos-do-solo-e-nematoides': {
+    title: 'Microrganismos do Solo e Nematoides',
+    description:
+      ' Nossas análises de microbiota de solo são baseadas no sequenciamento de DNA de nova geração. Identificamos os microrganismos benéficos, patogênicos, nematoides e o potencial metabólico. A partir dos resultados, é possível criar estratégias de manejo eficiente que otimizem a saúde do solo aprimorando processos produtivos. A produtividade começa no Solo!',
+    image: '/microrganismos-do-solo-e-nematoides.webp'
+  },
+  'microbiota-geral': {
+    title: 'Microbiota Geral',
+    description:
+      'Descrição: A análise de microbiota geral possibilita a identificação de bactérias e/ou fungos de diferentes tipos de amostras. Por exemplo, produtos biológicos, fermentados on farm, compostos, lodos, vinhaças, partes da planta para identificação de patógenos (doenças) etc. Estes microrganismos podem ser benéficos ou patogênicos. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    image: '/microrganismos.webp'
+  },
+  'microbiota-de-produto-biologico': {
+    title: 'Microbiota de Produto Biológico',
+    description:
+      'A análise de microbiota possibilita a identificação de bactérias e/ou fungos de produtos biológicos comerciais. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    image: '/microbiota-de-produto-biologico.webp'
+  },
+  'producao-on-farm': {
+    title: 'Produção On Farm',
+    description:
+      ' A análise de microbiota possibilita a identificação de bactérias e/ou fungos de produção on farm. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    image: '/producao-on-farm.webp'
+  },
+  'microbiota-de-compostagem': {
+    title: 'Microbiota de Compostagem',
+    description:
+      ' A análise de microbiota possibilita a identificação de bactérias e/ou fungos de processos de compostagem sólido ou líquido. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    image: '/microbiota-de-compostagem.webp'
+  },
+  'identificacao-de-patogenos-de-plantas': {
+    title: 'Identificação de patógenos de plantas',
+    description:
+      'A análise possibilita a identificação de bactérias e/ou fungos causadores de doenças em diferentes partes da planta. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    image: '/identificacao-de-patogenos-de-plantas.webp'
+  },
+  'identificacao-de-microrganismo-isolado': {
+    title: 'Identificação de Microrganismo Isolado',
+    description:
+      'Para esta análise os microrganismos precisam estar isolados previamente. A partir da amostra recebida, identificamos o gênero/espécie do microrganismo (bactéria ou fungo).',
+    image: '/identificacao-de-microrganismo-isolado.webp'
+  }
+}
+
 const messagesPt = {
   header,
   home,
@@ -437,7 +547,9 @@ const messagesPt = {
   services,
   feedbacks,
   search,
-  teste
+  teste,
+  agro,
+  agroServices
 }
 
 export default messagesPt

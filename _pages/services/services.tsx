@@ -44,7 +44,7 @@ export default function Services() {
 
         <Wrapper className="w-full  h-1/2 md:w-1/2 md:h-full relative group">
           <img
-            src="/onion-plantation.jpg"
+            src="/agro.webp"
             className="w-full h-full object-cover brightness-50 absolute top-0 left-0 -z-10 md:brightness-[0.2] md:group-hover:brightness-50 "
             alt=""
             loading="lazy"

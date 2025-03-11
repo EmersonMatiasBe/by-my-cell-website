@@ -19,7 +19,7 @@ export default function Agro() {
       <Wrapper className="flex w-full justify-center flex-wrap  gap-x-5 gap-y-10">
         {search.items.map(({ title, subtitle, image, link }, index) => (
           <div
-            className="flex flex-col w-full h-[420px] max-w-[600px] md:max-w-[400px] bg-white overflow-hidden rounded-lg"
+            className={`${title === '' ? 'invisible' : 'flex'} flex-col w-full h-[420px] max-w-[600px] md:max-w-[400px] bg-white overflow-hidden rounded-lg`}
             key={index}
           >
             <img
@@ -40,7 +40,7 @@ export default function Agro() {
       </Wrapper>
 
       <Wrapper className="w-full h-dvh fixed top-0 left-0 -z-10 brightness-[0.2]">
-        <img src="/laboratory.jpg" className="w-full h-full" alt="" loading="lazy" />
+        <img src="/laboratory.jpg" className="w-full h-full object-cover" alt="" loading="lazy" />
       </Wrapper>
 
       <FloatingHeader />

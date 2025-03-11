@@ -3,20 +3,21 @@ import Link from 'next/link'
 import Wrapper from '../ui/wrapper'
 import NavigationMenu from '../navigation-menu'
 import { RiInstagramFill, RiLinkedinBoxFill, RiWhatsappFill, RiYoutubeFill } from 'react-icons/ri'
-import translations from '@/i18n/translations'
 import { useEffect, useState } from 'react'
 import Container from '../ui/container'
 import SideMenu from './side-menu'
+import useTranslations from '@/i18n/translations'
 
 export default function Header({ lang }: { lang: 'pt' | 'en' }) {
   const [location, setLocation] = useState('')
+  const { socialMedias } = useTranslations('pt')
 
   useEffect(() => {
     const path = window.location.pathname
     setLocation(path)
   }, [])
 
-  const header = translations(lang)?.header
+  const header = useTranslations(lang)?.header
   return (
     <header
       data-location={location}
@@ -42,16 +43,32 @@ export default function Header({ lang }: { lang: 'pt' | 'en' }) {
         </Wrapper>
 
         <Wrapper className="lg:w-[200px] flex text-xl justify-between">
-          <Link href="/" className="hidden p-2 bg-white rounded-full text-secondary-500 lg:flex">
+          <Link
+            href={socialMedias.instagram}
+            target="_blank"
+            className="hidden p-2 bg-white rounded-full text-secondary-500 lg:flex"
+          >
             <RiInstagramFill />
           </Link>
-          <Link href="/" className="hidden p-2 bg-white rounded-full text-secondary-500 lg:flex">
+          <Link
+            href={socialMedias.linkedin}
+            target="_blank"
+            className="hidden p-2 bg-white rounded-full text-secondary-500 lg:flex"
+          >
             <RiLinkedinBoxFill />
           </Link>
-          <Link href="/" className="hidden p-2 bg-white rounded-full text-secondary-500 lg:flex">
+          <Link
+            href={socialMedias.youtube}
+            target="_blank"
+            className="hidden p-2 bg-white rounded-full text-secondary-500 lg:flex"
+          >
             <RiYoutubeFill />
           </Link>
-          <Link href="/" className="hidden p-2 bg-white rounded-full text-secondary-500 lg:flex">
+          <Link
+            href={socialMedias.whatsapp}
+            target="_blank"
+            className="hidden p-2 bg-white rounded-full text-secondary-500 lg:flex"
+          >
             <RiWhatsappFill />
           </Link>
 

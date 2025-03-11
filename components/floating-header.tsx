@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 export default function FloatingHeader() {
   return (
-    <Wrapper className="fixed flex w-fit h-fit bg-white shadow-md shadow-black group rounded-full z-20 right-10 bottom-28">
+    <Wrapper className="hidden w-fit h-fit bg-white shadow-md shadow-black group rounded-full z-20 right-10 bottom-28">
       <div className="relative">
         <RiArrowUpSFill className="text-4xl group" />
 

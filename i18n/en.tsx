@@ -402,6 +402,74 @@ const teste = {
     image: '/identificacao-de-microrganismos.webp'
   }
 }
+
+const agro = {
+  title: 'Serviços para o Agro',
+  subtitle:
+    'Nossa metodologia permite conhecer os microrganismos de diferentes tipos de amostras de maneira eficiente e baseado na ciência.',
+  background: '/agro.webp',
+  items: [
+    {
+      title: 'Microrganismos do Solo e Nematoides',
+      subtitle:
+        'Conheça microrganismos e nematoides do solo da sua lavoura  e maneje o seu potencial.',
+      image: '/microrganismos-do-solo-e-nematoides.webp',
+      link: 'microrganismos-do-solo-e-nematoides'
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: '',
+      link: ''
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: '',
+      link: ''
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: '',
+      link: ''
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: '',
+      link: ''
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: '',
+      link: ''
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: '',
+      link: ''
+    },
+    {
+      title: '',
+      subtitle: '',
+      image: '',
+      link: ''
+    }
+  ]
+}
+
+const agroServices = {
+  'microrganismos-do-solo-e-nematoides': {
+    title: 'Microrganismos do Solo e Nematoides',
+    description:
+      ' Nossas análises de microbiota de solo são baseadas no sequenciamento de DNA de nova geração. Identificamos os microrganismos benéficos, patogênicos, nematoides e o potencial metabólico. A partir dos resultados, é possível criar estratégias de manejo eficiente que otimizem a saúde do solo aprimorando processos produtivos. A produtividade começa no Solo!',
+    image: '/microrganismos-do-solo-e-nematoides.webp'
+  }
+}
+
 const messagesEn = {
   header,
   home,
@@ -411,7 +479,9 @@ const messagesEn = {
   services,
   feedbacks,
   search,
-  teste
+  teste,
+  agro,
+  agroServices
 }
 
 export default messagesEn

@@ -26,7 +26,7 @@ export default function AboutUs() {
           <div className="w-full text-pretty  flex flex-col justify-center">
             {aboutUs.text.map((text, index) => {
               return (
-                <p className="text-lg text-gray-600 mb-4" key={index}>
+                <p className="text-xl text-gray-600 mb-4" key={index}>
                   {text}
                 </p>
               )
