@@ -10,19 +10,13 @@ export default function Results({ lang }: { lang: LanguageOptions }) {
   } = useTranslations(lang)
 
   return (
-    <Container id="results" className="flex flex-col py-20  gap-0 px-5 md:gap-5 md:flex-row">
-      <Wrapper className="w-full flex flex-col justify-center items-center md:max-w-[45%] md:items-start">
+    <Container
+      id="results"
+      className="flex flex-col py-20 relative  gap-0 px-5 md:gap-5 md:flex-row"
+    >
+      <Wrapper className="w-full relative flex flex-col justify-start items-center md:max-w-[45%] md:items-start">
         <h6 className="font-semibold mb-1">{subtitle}</h6>
         <h2 className="text-4xl font-bold mb-2 text-center md:text-left leading-normal">{title}</h2>
-
-        <div className="w-full h-full max-w-[500px] mx-auto">
-          <img
-            src="/seeding.png"
-            alt="Muda de planta"
-            className="h-full w-full object-cover"
-            loading="lazy"
-          />
-        </div>
       </Wrapper>
 
       <Wrapper className="w-full flex flex-col gap-5  justify-center md:max-w-[55%] md:gap-10">
@@ -33,7 +27,7 @@ export default function Results({ lang }: { lang: LanguageOptions }) {
             className="flex flex-col text-center gap-2 px-5 bg-gray-50  items-center shadow-md  md:px-10 py-5 rounded-md"
             key={index}
           >
-            <div className="text-primary-500  text-4xl   flex items-center justify-center font-bold    md:text-4xl ">
+            <div className="text-secondary-500  text-4xl   flex items-center justify-center font-bold    md:text-4xl ">
               {number}
             </div>
 
@@ -43,6 +37,15 @@ export default function Results({ lang }: { lang: LanguageOptions }) {
           </div>
         ))}
       </Wrapper>
+
+      <div className="w-1/2 h-full -bottom-0 xl:left-[-100px]   mx-auto absolute   -z-10">
+        <img
+          src="/results-dna.jpg"
+          alt="Muda de planta"
+          className="h-full w-full overflow-visible  -translate-x-20 -translate-y-10 object-cover object-bottom opacity-30 md:opacity-50"
+          loading="lazy"
+        />
+      </div>
     </Container>
   )
 }

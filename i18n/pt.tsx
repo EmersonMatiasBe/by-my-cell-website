@@ -8,7 +8,7 @@ const home = {
   results: {
     title: (
       <>
-        Entregando <span className="p-2 bg-primary-500 text-white">Excelência</span>
+        Entregando <span className="p-2 bg-secondary-500 text-white">Excelência</span>
         <br /> nos Resultados
       </>
     ),
@@ -16,7 +16,7 @@ const home = {
     text: ' Na ByMyCell, nossa missão é entregar resultados de análise genômica de alta qualidade com rapidez e precisão. Com um portfólio de mais de 450 projetos bem-sucedidos, nos orgulhamos de superar as expectativas de nossos clientes. Nossa equipe especializada garante soluções inovadoras, sempre com foco na excelência e no sucesso de cada cliente.',
     results: [
       { number: '+500', text: 'Amostras analisadas por mês' },
-      { number: '+150', text: 'Clientes satisfeitos' },
+      { number: '+50', text: 'Artigos publicados por clientes' },
       { number: '+450', text: 'Projetos realizados em nossas plataformas' },
       { number: '20-60', text: 'Dias de prazo para entrega de resultados' }
     ]
