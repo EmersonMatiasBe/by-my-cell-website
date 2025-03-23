@@ -107,7 +107,7 @@ const home = {
 }
 
 const header = [
-  { label: 'Inicio', href: '/', items: null },
+  { label: 'Início', href: '/', items: null },
   {
     label: 'Serviços',
     href: '/servicos',

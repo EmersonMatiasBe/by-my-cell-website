@@ -18,7 +18,7 @@ const Footer = () => {
 
         <Wrapper className="flex gap-5 text-lg font-semibold w-full justify-center lg:w-fit">
           <Link href="/" className="">
-            Inicio
+            Início
           </Link>
           <Link href="/servicos">Serviços</Link>
           <Link href="/quem-somos">Quem Somos</Link>

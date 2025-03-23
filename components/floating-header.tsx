@@ -18,7 +18,7 @@ export default function FloatingHeader() {
         <div className="absolute w-[200px] justify-center flex flex-col  h-0 transition-all duration-500 overflow-hidden bg-white -translate-y-full -translate-x-full -top-2 left-10 rounded-xl shadow-md shadow-black group-hover:h-[220px] ">
           <div className="px-5 flex flex-col gap-2 mb-2 ove">
             <Link href="/" className="hover:bg-gray-200 px-2 font-bold">
-              Inicio
+              Início
             </Link>
             <Link href="/servicos" className="hover:bg-gray-200 px-2 font-bold">
               Serviços

@@ -10,7 +10,7 @@ export default function Results({ lang }: { lang: LanguageOptions }) {
   } = useTranslations(lang)
 
   return (
-    <Container className="flex flex-col py-20  gap-0 px-5 md:gap-5 md:flex-row">
+    <Container id="results" className="flex flex-col py-20  gap-0 px-5 md:gap-5 md:flex-row">
       <Wrapper className="w-full flex flex-col justify-center items-center md:max-w-[45%] md:items-start">
         <h6 className="font-semibold mb-1">{subtitle}</h6>
         <h2 className="text-4xl font-bold mb-2 text-center md:text-left leading-normal">{title}</h2>
