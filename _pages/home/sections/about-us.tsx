@@ -1,7 +1,8 @@
-import Button from '@/components/ui/button/raw-button'
+import Button from '@/components/ui/button/index'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import useTranslations from '@/i18n/translations'
+import Link from 'next/link'
 
 export default function AboutUs() {
   const {
@@ -11,11 +12,11 @@ export default function AboutUs() {
   } = useTranslations('pt')
 
   return (
-    <Container className="flex flex-col items-center py-20 gap-10 px-5 lg:flex-row ">
-      <Wrapper className="w-[100%] max-w-[600px]  h-auto relative lg:w-[60%] lg:max-w-full">
+    <Container className="flex flex-col items-center justify-between py-20 gap-10 px-5 lg:flex-row ">
+      <Wrapper className="w-full max-w-[500px] lg:max-w-[600px] h-auto">
         <img
-          className="object-cover w-full h-full"
-          src="/building.webp"
+          className="object-cover w-full h-full rounded-lg"
+          src="/home-about-us.webp"
           alt="Foto de um prédio"
           sizes="100%"
           loading="lazy"
@@ -32,9 +33,9 @@ export default function AboutUs() {
         <div className="mt-10">
           <p className="text-justify lg:text-left">{text}</p>
 
-          <Button className="bg-secondary-500 py-5 rounded-lg w-full font-semibold text-white mt-10">
-            {buttonLabel}
-          </Button>
+          <Button.Secondary className="font-semibold text-white mt-10 py-5">
+            <Link href="/quem-somos">{buttonLabel}</Link>
+          </Button.Secondary>
         </div>
       </Wrapper>
     </Container>
