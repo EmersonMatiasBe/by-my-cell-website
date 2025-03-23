@@ -42,23 +42,33 @@ const home = {
     items: [
       {
         title: 'Análise de microbiota',
-        text: 'Identificação de microrganismos presentes em amostras a partir de sequenciamento de DNA de nova geração'
+        text: 'Identificação de microrganismos presentes em amostras a partir de sequenciamento de DNA de nova geração',
+        image: '/analise-de-microbiota.webp',
+        url: 'analise-de-microbiota'
       },
       {
         title: 'Genomas de Bactérias',
-        text: 'Sequenciamento completo de genoma de bactérias em plataformas Illumina e Nanopore, com montagem a anotação'
+        text: 'Sequenciamento completo de genoma de bactérias em plataformas Illumina e Nanopore, com montagem a anotação',
+        image: '/service-2.jpg',
+        url: 'sequenciamento-de-genomas-de-bacterias'
       },
       {
         title: 'Genomas de Fungos',
-        text: 'Sequenciamento completo de genomas de fungos e leveduras, com montagem a anotação'
+        text: 'Sequenciamento completo de genomas de fungos e leveduras, com montagem a anotação',
+        image: '/genomas-de-fungos.webp',
+        url: 'bioinformatica'
       },
       {
         title: 'Metagenômica Shotgun',
-        text: 'Análise por sequenciamento massivo de genomas presente em amostras complexas'
+        text: 'Análise por sequenciamento massivo de genomas presente em amostras complexas',
+        image: '/metagenomica-shotgun.webp',
+        url: 'bioinformatica'
       },
       {
         title: ' Bioinformática',
-        text: 'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas'
+        text: 'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas',
+        image: '/bioinformatica.webp',
+        url: 'bioinformatica'
       }
     ],
     buttonLabel: 'Saber mais'

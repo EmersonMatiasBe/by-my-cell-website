@@ -8,7 +8,7 @@ const home = {
   results: {
     title: (
       <>
-        Entregando <span className="p-2 bg-primary-500 text-white">Excelência</span>
+        Entregando <span className="p-2 bg-secondary-500 text-white">Excelência</span>
         <br /> nos Resultados
       </>
     ),
@@ -16,7 +16,7 @@ const home = {
     text: ' Na ByMyCell, nossa missão é entregar resultados de análise genômica de alta qualidade com rapidez e precisão. Com um portfólio de mais de 450 projetos bem-sucedidos, nos orgulhamos de superar as expectativas de nossos clientes. Nossa equipe especializada garante soluções inovadoras, sempre com foco na excelência e no sucesso de cada cliente.',
     results: [
       { number: '+500', text: 'Amostras analisadas por mês' },
-      { number: '+150', text: 'Clientes satisfeitos' },
+      { number: '+50', text: 'Artigos publicados por clientes' },
       { number: '+450', text: 'Projetos realizados em nossas plataformas' },
       { number: '20-60', text: 'Dias de prazo para entrega de resultados' }
     ]
@@ -35,30 +35,40 @@ const home = {
   services: {
     title: (
       <>
-        Conheça nossos <br></br> <span className="p-2 bg-secondary-500 text-white">Serviços</span>
+        Conheça nossos <span className="p-2 bg-secondary-500 text-white">Serviços</span>
       </>
     ),
     subtitle: 'Serviços',
     items: [
       {
         title: 'Análise de microbiota',
-        text: 'Identificação de microrganismos presentes em amostras a partir de sequenciamento de DNA de nova geração'
+        text: 'Identificação de microrganismos presentes em amostras a partir de sequenciamento de DNA de nova geração',
+        image: '/analise-de-microbiota.webp',
+        url: 'analise-de-microbiota'
       },
       {
         title: 'Genomas de Bactérias',
-        text: 'Sequenciamento completo de genoma de bactérias em plataformas Illumina e Nanopore, com montagem a anotação'
+        text: 'Sequenciamento completo de genoma de bactérias em plataformas Illumina e Nanopore, com montagem a anotação',
+        image: '/service-2.jpg',
+        url: 'sequenciamento-de-genomas-de-bacterias'
       },
       {
         title: 'Genomas de Fungos',
-        text: 'Sequenciamento completo de genomas de fungos e leveduras, com montagem a anotação'
+        text: 'Sequenciamento completo de genomas de fungos e leveduras, com montagem a anotação',
+        image: '/genomas-de-fungos.webp',
+        url: 'bioinformatica'
       },
       {
         title: 'Metagenômica Shotgun',
-        text: 'Análise por sequenciamento massivo de genomas presente em amostras complexas'
+        text: 'Análise por sequenciamento massivo de genomas presente em amostras complexas',
+        image: '/metagenomica-shotgun.webp',
+        url: 'bioinformatica'
       },
       {
         title: ' Bioinformática',
-        text: 'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas'
+        text: 'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas',
+        image: '/bioinformatica.webp',
+        url: 'bioinformatica'
       }
     ],
     buttonLabel: 'Saber mais'
@@ -94,7 +104,7 @@ const home = {
   },
   blackgenn: {
     title: 'Engenharia de Proteínas e Metabolômica',
-    text: 'Nossa plataforma BlackGenn é dedicação à prospecção e engenharia de proteínas e de microrganismos, combinando a fronteira de conhecimento de genômica, metabolômica e computação de alto desempenho para acelerar a biotecnologia no Brasil.',
+    text: 'Nossa plataforma BlackGenn é dedicada à prospecção e engenharia de proteínas e de microrganismos, combinando a fronteira de conhecimento de genômica, metabolômica e computação de alto desempenho para acelerar a biotecnologia no Brasil.',
     labelButton: 'Plataforma BlackGenn',
     link: 'https://blackgenn.com/'
   },

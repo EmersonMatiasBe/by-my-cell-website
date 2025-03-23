@@ -2,16 +2,9 @@ import Button from '@/components/ui/button/index'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import useTranslations from '@/i18n/translations'
+import Link from 'next/link'
 
 export default function Solutions() {
-  const images = [
-    '/service-1.webp',
-    '/service-2.jpg',
-    '/service-3.jpg',
-    '/service-4.jpg',
-    '/service-5.webp'
-  ]
-
   const {
     home: { services }
   } = useTranslations('pt')
@@ -25,13 +18,13 @@ export default function Solutions() {
         </Wrapper>
 
         <Wrapper className="h-[600px] gap-5 hidden lg:flex ">
-          {services.items.map(({ text, title }, index) => (
+          {services.items.map(({ text, title, image, url }, index) => (
             <div
               className="w-[20%] h-full rounded-[10px] hover:rounded-md relative bg-blue-500 hover:w-[50%] transition-all duration-500 ease-in-out group overflow-hidden"
               key={index}
             >
               <img
-                src={images[index]}
+                src={image}
                 alt="Serviço 1"
                 className="w-full h-full object-cover brightness-50 group-hover:brightness-100 transition-all duration-500 ease-in-out"
                 loading="lazy"
@@ -41,7 +34,7 @@ export default function Solutions() {
                 <p className="mb-3">{text}</p>
 
                 <Button.Primary className="px-4 py-2 rounded-md">
-                  {services.buttonLabel}
+                  <Link href={`servicos/pesquisadores/${url}`}>{services.buttonLabel}</Link>
                 </Button.Primary>
               </div>
 
@@ -53,17 +46,17 @@ export default function Solutions() {
         </Wrapper>
 
         <Wrapper className="flex w-full flex-wrap justify-center gap-8 lg:hidden">
-          {services.items.map(({ text, title }, index) => (
+          {services.items.map(({ text, title, image, url }, index) => (
             <div
               className="max-w-[400px] w-full bg-white overflow-hidden rounded-lg shadow-md shadow-black hover:scale-110"
               key={index}
             >
-              <img src="/building.webp" className="" alt="" loading="lazy" />
+              <img src={image} className="" alt="" loading="lazy" />
               <div className="px-4 py-4">
                 <p className="font-semibold text-lg mb-3">{title}</p>
                 <p className="line-clamp-3 font-light mb-2">{text}</p>
                 <Button.Primary className="px-4 py-2 text-white rounded-md ml-auto">
-                  {services.buttonLabel}
+                  <Link href={`servicos/pesquisadores/${url}`}>{services.buttonLabel}</Link>
                 </Button.Primary>
               </div>
             </div>
