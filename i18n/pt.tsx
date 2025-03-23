@@ -73,6 +73,17 @@ const home = {
     ],
     buttonLabel: 'Saber mais'
   },
+  steps: {
+    title: 'Conheça nosso fluxo de análise',
+    subtitle: 'Passo a Passo',
+    text: 'Nossas análises são baseadas no sequenciamento de DNA de nova geração. A partir do recebimento das amostras no laboratório, realizamos a extração de DNA total e preparo das bibliotecas de sequenciamento. As análises geram uma quantidade massiva de dados que são processados em nossa plataforma em Nuvem. Os dados gerados são analisados por bioinformática e mapeados contra nossos bancos de dados, permitindo assim identificar os níveis relativos de todos os microrganismos presentes na amostra.',
+    steps: [
+      'Envio da amostra',
+      'Etapas Laboratoriais',
+      'Sequenciamento de DNA',
+      'Análise dos dados e Relatório '
+    ]
+  },
   ebook: {
     title: (
       <>
