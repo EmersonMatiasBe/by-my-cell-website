@@ -21,7 +21,7 @@ export default function Feedbacks() {
 
   return (
     <Container className="py-20 my-20 max-w-full  overflow-hidden relative">
-      <div className="px-4 sm:px-6 lg:px-12 z-10 w-full text-black md:text-white">
+      <div className="px-4 sm:px-6 lg:px-12 z-10 w-full text-white">
         <h6 className="font-semibold mb-3 text-center">Depoimentos</h6>
         <h2 className="text-4xl font-bold text-center leading-normal">
           A <span className="font-bold bg-green-500 p-2">Satisfação</span>

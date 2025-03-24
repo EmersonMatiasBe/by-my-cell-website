@@ -412,15 +412,63 @@ const search = {
 const teste = {
   'analise-de-microbiota': {
     title: 'Análise de Microbiota',
-    description:
-      'Serviço voltado para pesquisadores, empresas de biológicos, On Farm e demais que desejam analisar a composição bacteriana e fúngica de suas amostras. Trabalhamos com as plataformas Illumina (short reads) e Oxford Nanopore (long reads), entregando relatório, tabelas completas, análise de diversidade e predição de vias metabólicas.',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado para pesquisadores, empresas de biológicos, On Farm e demais que desejam analisar a composição bacteriana e fúngica de suas amostras. Trabalhamos com as plataformas Illumina (short reads) e Oxford Nanopore (long reads), entregando relatório, tabelas completas, análise de diversidade e predição de vias metabólicas.'
+      }
+    ],
     image: '/analise-de-microbiota.webp'
   },
   'identificacao-de-microrganismos': {
     title: 'Identificação de Microrganismos',
-    description:
-      'Serviço voltado a clientes que querem identificar bactéria, fungo ou levedura a partir de cultura isolada, onde espera-se encontrar um único microrganismo. Trabalhamos com a plataforma Nanopore Oxford, entregando relatório com a identificação do microrganismo a nível de gênero e de espécie.',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado a clientes que querem identificar bactéria, fungo ou levedura a partir de cultura isolada, onde espera-se encontrar um único microrganismo. Trabalhamos com a plataforma Nanopore Oxford, entregando relatório com a identificação do microrganismo a nível de gênero e de espécie.'
+      }
+    ],
     image: '/identificacao-de-microrganismos.webp'
+  },
+  'sequenciamento-de-genomas-de-bacterias': {
+    title: 'Sequenciamento de Genomas de Bactérias',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado a pesquisadores em universidades e institutos e equipes de P&D em empresas, onde realizamos o sequenciamento completo de bactérias, entregando o genoma montado e anotado (com bioinformática completa). Trabalhamos com a plataforma Illumina e indicamos a montagem híbrida (Illumina + Nanopore Oxford) para fechar o genoma.'
+      }
+    ],
+    image: '/genomas-de-bacterias.webp'
+  },
+  'sequenciamento-de-genomas-de-fungos-e-leveduras': {
+    title: 'Sequenciamento de Genomas de Fungos e Leveduras',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado a pesquisadores em universidades e institutos e equipes de P&D em empresas, onde realizamos o sequenciamento completo de fungos e leveduras, entregando o genoma montado e anotado (com bioinformática completa). Trabalhamos com a plataforma Illumina e indicamos a montagem híbrida (Illumina + Nanopore Oxford) para fechar o genoma.'
+      }
+    ],
+    image: '/genomas-de-fungos.webp'
+  },
+  'metagenomica-shotgun': {
+    title: 'Metagenômica Shotgun',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado a grupos de pesquisa mais avançados, na qual realizamos o sequenciamento massivo do DNA total de amostras em plataforma Illumina, permitindo identificar todos os microrganismos presentes na amostra (bactérias, fungos, parasitas, células e outros) e explorar genes e genomas em alta resolução.'
+      }
+    ],
+    image: '/metagenomica-shotgun.webp'
+  },
+  bioinformatica: {
+    title: 'Bioinformática',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas de sequenciamento.'
+      }
+    ],
+    image: '/bioinformatica.webp'
   }
 }
 

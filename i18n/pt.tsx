@@ -49,7 +49,7 @@ const home = {
       {
         title: 'Genomas de Bactérias',
         text: 'Sequenciamento completo de genoma de bactérias em plataformas Illumina e Nanopore, com montagem a anotação',
-        image: '/service-2.jpg',
+        image: '/genomas-de-bacterias.webp',
         url: 'sequenciamento-de-genomas-de-bacterias'
       },
       {
@@ -336,12 +336,12 @@ const services = {
   search: {
     title: 'Para PESQUISA',
     subtitle: 'Conheça os nossos serviços para acelerar a sua Pesquisa Científica',
-    labelButton: 'Conhecer Serviços para Pesquisa'
+    labelButton: 'Conheça os Serviços para PESQUISA'
   },
   agro: {
     title: 'Para o AGRO',
     subtitle: 'Conheça os nossos serviços de análises para o Agro',
-    labelButton: 'Conhecer Serviços para o AGRO'
+    labelButton: 'Conheça os Serviços para o AGRO'
   }
 }
 
@@ -398,20 +398,20 @@ const search = {
     {
       title: 'Sequenciamento de Genomas de Bactérias',
       subtitle: 'Genoma completo bacteriano ',
-      image: '/sequenciamento-de-genomas-de-bacterias.webp',
+      image: '/genomas-de-bacterias.webp',
       link: 'sequenciamento-de-genomas-de-bacterias'
     },
     {
       title: 'Sequenciamento de Genomas de Fungos e Leveduras',
       subtitle: 'Genoma completo fúngico',
-      image: '/analise-de-microbiota.webp',
-      link: 'identificacao-de-microrganismos'
+      image: '/genomas-de-fungos.webp',
+      link: 'sequenciamento-de-genomas-de-fungos-e-leveduras'
     },
     {
       title: 'Metagenômica Shotgun',
       subtitle: 'Montagem, anotação e identificação de microrganismos em amostras complexas',
-      image: '/analise-de-microbiota.webp',
-      link: 'identificacao-de-microrganismos'
+      image: '/metagenomica-shotgun.webp',
+      link: 'metagenomica-shotgun'
     },
     {
       title: 'Bioinformática',
@@ -425,26 +425,111 @@ const search = {
 const teste = {
   'analise-de-microbiota': {
     title: 'Análise de Microbiota',
-    description:
-      'Serviço voltado para pesquisadores, empresas de biológicos, On Farm e demais que desejam analisar a composição bacteriana e fúngica de suas amostras. Trabalhamos com as plataformas Illumina (short reads) e Oxford Nanopore (long reads), entregando relatório, tabelas completas, análise de diversidade e predição de vias metabólicas.',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado para pesquisadores, empresas de biológicos, On Farm e demais que desejam analisar a composição bacteriana e fúngica de suas amostras. Trabalhamos com as plataformas Illumina (short reads) e Oxford Nanopore (long reads), entregando relatório, tabelas completas, análise de diversidade e predição de vias metabólicas.'
+      },
+      {
+        title: 'Material Requerido',
+        text: '2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. Indicamos enviar as amostras em gelo reciclável para evitar o crescimento microbiano indesejado. O experimento amostral e envio das amostras são de responsabilidade do cliente.'
+      },
+      {
+        title: 'Para Amostras de DNA Já Extraídas',
+        text: 'Mínimo 500 ng de DNA extraído em um volume mínimode 50uL. Enviar em microtubos tipo eppendorf de 1.5mL devidamente identifcados, em geloseco/reciclável. Não concentrar as amostras. Recomendamos os kits de extração ZymoBIOMICS Mini Prep (ref: D4300) ou DNeasy PowerSoil Pro QIAGEN (ref: 47016).'
+      }
+    ],
     image: '/analise-de-microbiota.webp'
   },
   'identificacao-de-microrganismos': {
     title: 'Identificação de Microrganismos',
-    description:
-      'Serviço voltado a clientes que querem identificar bactéria, fungo ou levedura a partir de cultura isolada, onde espera-se encontrar um único microrganismo. Trabalhamos com a plataforma Nanopore Oxford, entregando relatório com a identificação do microrganismo a nível de gênero e de espécie.',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado a clientes que querem identificar bactéria, fungo ou levedura a partir de cultura isolada, onde espera-se encontrar um único microrganismo. Trabalhamos com a plataforma Nanopore Oxford, entregando relatório com a identificação do microrganismo a nível de gênero e de espécie.'
+      },
+      {
+        title: 'Material Requerido',
+        text: '2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. Não recebemos amostras em Placa de Petri. Recomendamos raspar o pellet e enviar em microtubo identificado. Indicamos enviar as amostras em gelo seco/reciclável para evitar crescimento microbiano indesejado. O experimento amostral e envio das amostras são de responsabilidade do cliente.'
+      },
+      {
+        title: 'Para Amostras de DNA Já Extraídas',
+        text: 'Mínimo 500 ng de DNA extraído em um volume mínimode 50uL. Enviar em microtubos tipo eppendorf de 1.5mL devidamente identificados, em geloseco/reciclável. Não concentrar as amostras. Recomendamos os kits de extração ZymoBIOMICS Mini Prep (ref: D4300) ou DNeasy PowerSoil Pro QIAGEN (ref: 47016).'
+      }
+    ],
     image: '/identificacao-de-microrganismos.webp'
   },
   'sequenciamento-de-genomas-de-bacterias': {
     title: 'Sequenciamento de Genomas de Bactérias',
-    description:
-      'Serviço voltado a pesquisadores em universidades e institutos e equipes de P&D em empresas, onde realizamos o sequenciamento completo de bactérias, entregando o genoma montado e anotado (com bioinformática completa). Trabalhamos com a plataforma Illumina e indicamos a montagem híbrida (Illumina + Nanopore Oxford) para fechar o genoma.',
-    image: '/sequenciamento-de-genomas-de-bacterias.webp'
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado a pesquisadores em universidades e institutos e equipes de P&D em empresas, onde realizamos o sequenciamento completo de bactérias, entregando o genoma montado e anotado (com bioinformática completa). Trabalhamos com a plataforma Illumina e indicamos a montagem híbrida (Illumina + Nanopore Oxford) para fechar o genoma.'
+      },
+      {
+        title: 'Material Requerido',
+        text: '2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. Não recebemos amostras em Placa de Petri. Recomendamos raspar o pellet e enviar em microtubo identificado. Indicamos enviar as amostras em gelo seco/reciclável para evitar crescimento microbiano indesejado. O experimento amostral e envio das amostras são de responsabilidade do cliente.'
+      },
+      {
+        title: 'Para Amostras de DNA Já Extraídas',
+        text: '4 ug de DNA genômico extraído em um volume mínimo de 50 uL. Enviar em microtubos tipo eppendorf de 1.5mL devidamente identificados, em gelo seco/reciclável. Não concentrar as amostras.'
+      }
+    ],
+    image: '/genomas-de-bacterias.webp'
+  },
+  'sequenciamento-de-genomas-de-fungos-e-leveduras': {
+    title: 'Sequenciamento de Genomas de Fungos e Leveduras',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado a pesquisadores em universidades e institutos e equipes de P&D em empresas, onde realizamos o sequenciamento completo de fungos e leveduras, entregando o genoma montado e anotado (com bioinformática completa). Trabalhamos com a plataforma Illumina e indicamos a montagem híbrida (Illumina + Nanopore Oxford) para fechar o genoma. O experimento amostral e envio das amostras são de responsabilidade do cliente.'
+      },
+      {
+        title: 'Material Requerido',
+        text: '2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. Indicamos enviar as amostras em gelo seco/reciclável para evitar crescimento microbiano indesejado.'
+      },
+      {
+        title: 'Para Amostras de DNA Já Extraídas',
+        text: '4 ug de DNA genômico extraído em um volume mínimo de 50 uL. Enviar em microtubos tipo eppendorf de 1.5mL devidamente identificados, em gelo seco/reciclável. Não concentrar as amostras.'
+      }
+    ],
+    image: '/genomas-de-fungos.webp'
+  },
+  'metagenomica-shotgun': {
+    title: 'Metagenômica Shotgun',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Serviço voltado a grupos de pesquisa mais avançados, na qual realizamos o sequenciamento massivo do DNA total de amostras em plataforma Illumina, permitindo identificar todos os microrganismos presentes na amostra (bactérias, fungos, parasitas, células e outros) e explorar genes e genomas em alta resolução. O experimento amostral e envio das amostras são de responsabilidade do cliente.'
+      },
+      {
+        title: 'Material Requerido',
+        text: '2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. Indicamos enviar as amostras em gelo seco/reciclável para evitar crescimento microbiano indesejado.'
+      },
+      {
+        title: 'Para Amostras de DNA Já Extraídas',
+        text: ' 4 ug de DNA genômico extraído em um volume mínimo de 50 uL. Enviar em microtubos tipo eppendorf de 1.5mL devidamente identificados, em gelo seco/reciclável. Não concentrar as amostras.'
+      }
+    ],
+    image: '/metagenomica-shotgun.webp'
   },
   bioinformatica: {
     title: 'Bioinformática',
-    description:
-      'Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados gerados em diferentes plataformas de sequenciamento.',
+    description: [
+      {
+        title: 'Descrição',
+        text: (
+          <>
+            Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados
+            gerados em diferentes plataformas de sequenciamento. <br />
+            Para avaliação da demanda de bioinformática e análises customizadas, solicitamos a
+            especificação do serviço desejado, microrganismo(a) alvo(s) e/ou esperado(s), plataforma
+            de sequenciamento usada, quantidade de dados brutos gerados, análises de dados
+            recomendados, outros.
+          </>
+        )
+      }
+    ],
     image: '/bioinformatica.webp'
   }
 }

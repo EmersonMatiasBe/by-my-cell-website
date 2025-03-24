@@ -13,7 +13,7 @@ export default function OtherServices() {
     <Container className="max-w-full flex flex-col gap-20 py-20">
       <Wrapper className="w-[95%] h-[500px] rounded-r-3xl relative overflow-hidden shadow-xl shadow-black">
         <img
-          src="/bg-home.jpg"
+          src="/home-by-my-soil.webp"
           className="w-full h-full object-cover brightness-[0.2]"
           alt=""
           loading="lazy"
@@ -30,7 +30,7 @@ export default function OtherServices() {
 
       <Wrapper className="w-[80%] h-[500px] rounded-l-3xl relative overflow-hidden ml-auto shadow-xl shadow-black">
         <img
-          src="/building.webp"
+          src="/home-black-genn.webp"
           className="w-full h-full object-cover brightness-[0.2]"
           alt=""
           loading="lazy"

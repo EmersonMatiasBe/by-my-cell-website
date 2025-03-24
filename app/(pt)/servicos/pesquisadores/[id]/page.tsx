@@ -1,15 +1,17 @@
 import FloatingHeader from '@/components/floating-header'
 import FloatingWhatsapp from '@/components/floating-whatsapp'
-import Button from '@/components/ui/button/index'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import useTranslations from '@/i18n/translations'
+import OpenBudget from './openBudget'
 
 export function generateStaticParams() {
   return [
     { id: 'analise-de-microbiota' },
     { id: 'identificacao-de-microrganismos' },
     { id: 'sequenciamento-de-genomas-de-bacterias' },
+    { id: 'sequenciamento-de-genomas-de-fungos-e-leveduras' },
+    { id: 'metagenomica-shotgun' },
     { id: 'bioinformatica' }
   ]
 }
@@ -23,10 +25,8 @@ export default function AgroServices({ params }: { params: { id: ID } }) {
   return (
     <Container className="pt-40 pb-20">
       <div className="mx-auto px-6">
-        <h2 className="text-4xl font-bold text-white text-center mb-8">{teste[id].title}</h2>
-
-        <div className="flex flex-wrap gap-10 justify-center mb-10">
-          <div className="w-[100%] h-[300px]  md:h-[400px] relative lg:w-[100%] lg:max-w-full">
+        <div className="flex flex-col flex-wrap gap-10 justify-center mb-10">
+          <div className="w-[100%] h-[300px]  md:h-[400px] relative lg:w-[100%] lg:max-w-[800px] mx-auto">
             <img
               src={teste[id].image}
               alt="Nossa Empresa"
@@ -34,23 +34,21 @@ export default function AgroServices({ params }: { params: { id: ID } }) {
               loading="lazy"
             />
           </div>
+          <h2 className="text-4xl font-bold text-secondary-500 text-center mb-8">
+            {teste[id].title}
+          </h2>
 
-          <Wrapper className="w-full  flex flex-col justify-center">
-            <div className="mb-5">
-              <h6 className="font-bold text-xl text-secondary-800 mb-2">Descrição</h6>
-              <p>{teste[id].description}</p>
-            </div>
+          <Wrapper className="w-full  flex flex-col justify-center max-w-[800px] mx-auto">
+            {teste[id].description.map(({ title, text }) => {
+              return (
+                <div className="mb-8" key={title}>
+                  <h6 className="font-bold text-2xl text-secondary-800 mb-2">{title}</h6>
+                  <p className="text-xl">{text}</p>
+                </div>
+              )
+            })}
 
-            <div>
-              <h6 className="font-bold text-xl text-secondary-800 mb-2">Prazo</h6>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio pariatur
-                aspernatur maxime suscipit? Maiores debitis nam dolore amet perferendis? Odio,
-                repellendus aut magnam quae nam vitae quasi voluptate? Laudantium, a.
-              </p>
-            </div>
-
-            <Button.Secondary className="text-white mt-10">Fazer um Orçamento</Button.Secondary>
+            <OpenBudget />
           </Wrapper>
         </div>
       </div>

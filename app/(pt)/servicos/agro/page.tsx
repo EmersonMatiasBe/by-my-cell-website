@@ -18,24 +18,24 @@ export default function Agro() {
 
       <Wrapper className="flex w-full justify-center flex-wrap  gap-x-5 gap-y-10">
         {agro.items.map(({ image, link, subtitle, title }, index) => (
-          <div
-            className={`${title === '' ? 'invisible' : 'flex'} flex-col w-full h-[420px] max-w-[600px] md:max-w-[400px] bg-white overflow-hidden rounded-lg`}
-            key={index}
-          >
-            <img
-              className="w-[600px] h-[250px] min-h-[250px] object-cover object-center"
-              src={image}
-              alt=""
-              loading="lazy"
-            />
-            <div className="px-4 py-4 flex flex-col h-full">
-              <p className="font-semibold text-primary-800 text-lg">{title}</p>
-              <p className="line-clamp-3 font-light mb-2">{subtitle}</p>
-              <Link href={`/servicos/agro/${link}`} className="mt-auto">
+          <Link href={`/servicos/agro/${link}`} className="mt-auto" key={index}>
+            <div
+              className={`${title === '' ? 'invisible' : 'flex'} flex-col w-full h-[420px] max-w-[600px] md:max-w-[400px] bg-white overflow-hidden rounded-lg`}
+            >
+              <img
+                className="w-[600px] h-[250px] min-h-[250px] object-cover object-center"
+                src={image}
+                alt=""
+                loading="lazy"
+              />
+              <div className="px-4 py-4 flex flex-col h-full">
+                <p className="font-semibold text-primary-800 text-lg">{title}</p>
+                <p className="line-clamp-3 font-light mb-2">{subtitle}</p>
+
                 <IoArrowForwardCircle className="text-4xl ml-auto text-primary-800" />
-              </Link>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </Wrapper>
 

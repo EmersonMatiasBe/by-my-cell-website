@@ -45,15 +45,6 @@ export default function AgroServices({ params }: { params: { id: ID } }) {
               <p className="text-xl">{agroServices[id].description}</p>
             </div>
 
-            <div>
-              <h6 className="font-bold text-2xl text-primary-800 mb-2">Prazo</h6>
-              <p className="text-lg">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio pariatur
-                aspernatur maxime suscipit? Maiores debitis nam dolore amet perferendis? Odio,
-                repellendus aut magnam quae nam vitae quasi voluptate? Laudantium, a.
-              </p>
-            </div>
-
             <Button.Primary className="text-white mt-10 h-20 max-w-[800px] mx-auto">
               Fazer um Orçamento
             </Button.Primary>
