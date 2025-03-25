@@ -19,7 +19,7 @@ export default function Services() {
       <Wrapper className="flex h-dvh flex-col md:flex-row">
         <Wrapper className="w-full h-1/2 md:w-1/2 md:h-full relative group">
           <img
-            src="/laboratory.jpg"
+            src="/laboratory.webp"
             className="w-full h-full object-cover brightness-50 md:brightness-[0.2] md:group-hover:brightness-50 absolute top-0 left-0 -z-10"
             alt=""
             loading="lazy"

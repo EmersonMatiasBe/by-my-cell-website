@@ -40,7 +40,7 @@ export default function Agro() {
       </Wrapper>
 
       <Wrapper className="w-full h-dvh fixed top-0 left-0 -z-10 brightness-[0.2]">
-        <img src="/laboratory.jpg" className="w-full h-full object-cover" alt="" loading="lazy" />
+        <img src="/laboratory.webp" className="w-full h-full object-cover" alt="" loading="lazy" />
       </Wrapper>
 
       <FloatingHeader />

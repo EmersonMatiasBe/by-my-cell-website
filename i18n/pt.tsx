@@ -143,7 +143,10 @@ const header = [
     href: '/contato',
     items: [
       { label: 'Contato', link: 'contato' },
-      { label: 'Trabalhe Conosco', link: '' }
+      {
+        label: 'Trabalhe Conosco',
+        link: 'https://docs.google.com/forms/d/e/1FAIpQLSfP-oVOIi62GUOJgRqUjoZMTSAO493s47vByzf2HcjiEcn6zg/viewform'
+      }
     ]
   }
 ]
@@ -201,125 +204,38 @@ const aboutUs = {
     'Esse é o nosso propósito. Esse é o DNA da ByMyCell.'
   ],
   teamSection: {
-    title: 'Conheça Nossa Equipe',
-    team: [
+    title: 'Sócios',
+    partners: [
       {
-        title: 'Diretoria',
-        members: [
-          {
-            name: 'Rafael Silva Rocha',
-            linkedin: 'https://www.linkedin.com/in/rafael-silva-rocha-5312b835/',
-            position: 'Fundador'
-          },
-          {
-            name: 'Stela Virgíllio',
-            linkedin: 'https://www.linkedin.com/in/stela-virgilio-250267212/',
-            position: 'Co-fundadora'
-          }
-        ]
+        name: 'Rafael Silva Rocha',
+        linkedin: 'https://www.linkedin.com/in/rafael-silva-rocha-5312b835/',
+        position: 'Fundador',
+        image: '/about-us-rafael.webp'
       },
       {
-        title: 'Laboratório',
-        members: [
-          {
-            name: 'Gabriela Condé',
-            linkedin: 'https://www.linkedin.com/in/gabriela-cond%C3%A9-b6043920a/',
-            position: ''
-          },
-          {
-            name: 'Jéssica Ellen Lima',
-            linkedin: 'https://www.linkedin.com/in/jessicaellenlima/',
-            position: ''
-          },
-          {
-            name: 'Lucas Lorenzon',
-            linkedin: 'https://www.linkedin.com/in/lucas-lorenzon-645a5615a/ ',
-            position: ''
-          },
-          {
-            name: 'Tânia Petta ',
-            linkedin: 'https://www.linkedin.com/in/t%C3%A2nia-petta-8b39b961/ ',
-            position: ''
-          },
-          ,
-          {
-            name: 'Victória Zucheratto ',
-            linkedin: 'https://www.linkedin.com/in/victoria-zucherato/ ',
-            position: ''
-          }
-        ]
-      },
-      {
-        title: 'Bioinformática',
-        members: [
-          {
-            name: 'Adriano Gomes',
-            linkedin: 'https://www.linkedin.com/in/adriano-gomes-silva/',
-            position: ''
-          },
-          {
-            name: 'Deivison Costa',
-            linkedin: 'https://www.linkedin.com/in/deivison-costa/',
-            position: ''
-          },
-          {
-            name: 'Gabriel Novais',
-            linkedin: 'https://www.linkedin.com/in/gabriel-novais-guarnieri/',
-            position: ''
-          },
-          {
-            name: 'Lucas Pádua',
-            linkedin: 'https://www.linkedin.com/in/lucas-p%C3%A1dua-3a2b0a227/',
-            position: ''
-          },
-          {
-            name: 'Maria Bruna Pilotto',
-            linkedin: 'https://www.linkedin.com/in/mbpilotto/',
-            position: ''
-          },
-          {
-            name: 'Vinícius Castro',
-            linkedin: 'https://www.linkedin.com/in/vinicius-castro-santos/',
-            position: ''
-          }
-        ]
-      },
-      {
-        title: 'Marketing e Vendas',
-        members: [
-          {
-            name: 'Anna Paula Tojal',
-            linkedin: 'https://www.linkedin.com/in/annannapaula/',
-            position: ''
-          },
-          {
-            name: 'Carolina Santos',
-            linkedin: 'https://www.linkedin.com/in/carolina-santos-ba4b3b24a/',
-            position: ''
-          },
-          {
-            name: 'Érika Cerqueira',
-            linkedin: 'https://www.linkedin.com/in/%C3%A9rika-cerqueira-b6765b259/',
-            position: ''
-          },
-          {
-            name: 'Rodrigo Barros',
-            linkedin: 'https://www.instagram.com/representantecrb/',
-            position: ''
-          }
-        ]
-      },
-      {
-        title: 'Gestão de Pessoas',
-        members: [
-          {
-            name: 'Bianca Gadini',
-            linkedin: 'https://www.linkedin.com/in/bianca-gadini/ ',
-            position: ''
-          }
-        ]
+        name: 'Stela Virgíllio',
+        linkedin: 'https://www.linkedin.com/in/stela-virgilio-250267212/',
+        position: 'Co-fundadora',
+        image: '/about-us-stela.webp'
       }
-    ]
+    ],
+    text: (
+      <>
+        Nossa equipe é formada por especialistas que unem ciência, tecnologia e estratégia. O{' '}
+        <span className="font-bold">Laboratório</span> é onde a ciência ganha vida, realizando
+        análises precisas de diversos tipos de amostras. A{' '}
+        <span className="font-bold"> Bioinformática</span> transforma dados complexos em relatórios
+        claros com informações valiosas para os clientes. O{' '}
+        <span className="font-bold"> Marketing</span> conecta nossa inovação ao mercado, comunicando
+        valor e construindo relacionamentos sólidos. A equipe de{' '}
+        <span className="font-bold">Vendas</span> é o nosso elo direto com os clientes, aproximando
+        o mercado das nossas soluções. Tudo isso é sustentado pela{' '}
+        <span className="font-bold">Gestão de pessoas</span>, que desenvolve talentos e fortalece
+        nossa missão de facilitar o acesso à genômica. Juntos, esses setores formam a ByMyCell, uma
+        empresa comprometida em revolucionar o agronegócio e a pesquisa brasileira por meio da
+        ciência e da tecnologia.
+      </>
+    )
   }
 }
 
@@ -327,7 +243,7 @@ const socialMedias = {
   linkedin: 'https://www.linkedin.com/company/bymycell',
   instagram: 'https://www.instagram.com/bymycell/',
   youtube: 'https://www.youtube.com/@ByMyCell',
-  whatsapp: ''
+  whatsapp: 'https://wa.me/5516994664643'
 }
 
 const services = {
@@ -555,7 +471,7 @@ const agro = {
     },
     {
       title: 'Microbiota de Produto Biológico',
-      subtitle: 'Identificação de microrganismos de compostagem',
+      subtitle: ' Identificação de microrganismos de produtos biológicos',
       image: '/microbiota-de-produto-biologico.webp',
       link: 'microbiota-de-produto-biologico'
     },
@@ -602,44 +518,109 @@ const agro = {
 const agroServices = {
   'microrganismos-do-solo-e-nematoides': {
     title: 'Microrganismos do Solo e Nematoides',
-    description:
-      ' Nossas análises de microbiota de solo são baseadas no sequenciamento de DNA de nova geração. Identificamos os microrganismos benéficos, patogênicos, nematoides e o potencial metabólico. A partir dos resultados, é possível criar estratégias de manejo eficiente que otimizem a saúde do solo aprimorando processos produtivos. A produtividade começa no Solo!',
+    description: [
+      {
+        title: 'Descrição',
+        text: (
+          <>
+            Nossas análises de microbiota de solo são baseadas no sequenciamento de DNA de nova
+            geração. Identificamos os microrganismos benéficos, patogênicos, nematoides e o
+            potencial metabólico. A partir dos resultados, é possível criar estratégias de manejo
+            eficiente que otimizem a saúde do solo aprimorando processos produtivos. A produtividade
+            começa no Solo!
+            <br />
+            Indicamos a realização das coletas das amostras compostas formadas por 10 a 20 amostras
+            simples, cobrindo a área de interesse. Recomendamos 1 amostra composta a cada 20
+            hectares em média, ou 1 amostra composta por zona de manejo ou 1 amostra composta por
+            tratamento. Envio das amostras a temperatura ambiente.
+          </>
+        )
+      }
+    ],
     image: '/microrganismos-do-solo-e-nematoides.webp'
   },
   'microbiota-geral': {
     title: 'Microbiota Geral',
-    description:
-      'Descrição: A análise de microbiota geral possibilita a identificação de bactérias e/ou fungos de diferentes tipos de amostras. Por exemplo, produtos biológicos, fermentados on farm, compostos, lodos, vinhaças, partes da planta para identificação de patógenos (doenças) etc. Estes microrganismos podem ser benéficos ou patogênicos. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'A análise de microbiota geral possibilita a identificação de bactérias e/ou fungos de diferentes tipos de amostras. Por exemplo, produtos biológicos, fermentados on farm, compostos, lodos, vinhaças, partes da planta para identificação de patógenos (doenças) etc. Estes microrganismos podem ser benéficos ou patogênicos. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias e Fungos/leveduras.'
+      },
+      {
+        title: 'Material Requerido',
+        text: '2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. Indicamos enviar as amostras em gelo reciclável para evitar o crescimento microbiano indesejado.'
+      }
+    ],
     image: '/microrganismos.webp'
   },
   'microbiota-de-produto-biologico': {
     title: 'Microbiota de Produto Biológico',
-    description:
-      'A análise de microbiota possibilita a identificação de bactérias e/ou fungos de produtos biológicos comerciais. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'A análise de microbiota possibilita a identificação de bactérias e/ou fungos de produtos biológicos comerciais. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias e Fungos/leveduras.'
+      },
+      {
+        title: 'Material Requerido',
+        text: '2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. Indicamos enviar as amostras em gelo reciclável para evitar o crescimento microbiano indesejado.'
+      }
+    ],
     image: '/microbiota-de-produto-biologico.webp'
   },
   'producao-on-farm': {
     title: 'Produção On Farm',
-    description:
-      ' A análise de microbiota possibilita a identificação de bactérias e/ou fungos de produção on farm. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'A análise de microbiota possibilita a identificação de microrganismos de produção on farm. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias e Fungos/leveduras.'
+      },
+      {
+        title: 'Material Requerido',
+        text: '2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. Indicamos enviar as amostras em gelo reciclável para evitar o crescimento microbiano indesejado.'
+      }
+    ],
     image: '/producao-on-farm.webp'
   },
   'microbiota-de-compostagem': {
     title: 'Microbiota de Compostagem',
-    description:
-      ' A análise de microbiota possibilita a identificação de bactérias e/ou fungos de processos de compostagem sólido ou líquido. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'A análise de microbiota possibilita a identificação de microrganismos de processos de compostagem sólido ou líquido. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias e Fungos/leveduras.'
+      },
+      {
+        title: 'Material Requerido',
+        text: ' 2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. Indicamos enviar as amostras em gelo reciclável para o evitar o crescimento microbiano indesejado.'
+      }
+    ],
     image: '/microbiota-de-compostagem.webp'
   },
   'identificacao-de-patogenos-de-plantas': {
     title: 'Identificação de patógenos de plantas',
-    description:
-      'A análise possibilita a identificação de bactérias e/ou fungos causadores de doenças em diferentes partes da planta. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias (marcador 16S completo) e Fungos/leveduras  (ITS1 e ITS2).',
+    description: [
+      {
+        title: 'Descrição',
+        text: ' A análise possibilita a identificação de microrganismos causadores de doenças em diferentes partes da planta. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias e Fungos/leveduras.'
+      },
+      {
+        title: 'Material Requerido',
+        text: 'Partes da planta, como folha, caule, raiz, enviados em sacos plásticos ou embrulhados em papel pardo com identificação da amostra. Indicamos enviar as amostras em gelo reciclável para evitar o crescimento microbiano indesejado.'
+      }
+    ],
     image: '/identificacao-de-patogenos-de-plantas.webp'
   },
   'identificacao-de-microrganismo-isolado': {
     title: 'Identificação de Microrganismo Isolado',
-    description:
-      'Para esta análise os microrganismos precisam estar isolados previamente. A partir da amostra recebida, identificamos o gênero/espécie do microrganismo (bactéria ou fungo).',
+    description: [
+      {
+        title: 'Descrição',
+        text: 'Para esta análise os microrganismos precisam estar isolados previamente. A partir da amostra recebida, identificamos o gênero/espécie do microrganismo (bactéria ou fungo).'
+      },
+      {
+        title: 'Material Requerido',
+        text: '2-10 gramas de amostra sólida/semi sólida ou 5-10 mL de amostra líquida, em recipiente individualizado e estéril, com identificação da amostra. ​​Não recebemos amostras em Placa de Petri. Recomendamos raspar o pellet e enviar em microtubo identificado. Indicamos enviar as amostras em gelo seco/reciclável para evitar crescimento microbiano indesejado.'
+      }
+    ],
     image: '/identificacao-de-microrganismo-isolado.webp'
   }
 }

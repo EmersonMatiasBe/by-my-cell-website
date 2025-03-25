@@ -5,6 +5,7 @@ import Button from '@/components/ui/button/index'
 
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
+import openWhatsapp from '@/helpers/open-whatsapp'
 import useTranslations from '@/i18n/translations'
 import Link from 'next/link'
 import {
@@ -112,7 +113,10 @@ export default function Contact() {
             <div className="hidden bg-white p-8 py-7 rounded-lg shadow-md shadow-black h-fit flex-col gap-5 items-center lg:flex">
               <h6 className="text-center text-lg font-bold">{contact.doubtBox.title}</h6>
 
-              <Button.Primary className="text-white rounded-lg font-semibold">
+              <Button.Primary
+                className="text-white rounded-lg font-semibold"
+                onClick={() => openWhatsapp()}
+              >
                 {contact.doubtBox.labelButton}
               </Button.Primary>
             </div>
@@ -218,14 +222,17 @@ export default function Contact() {
         <div className=" bg-white p-8 py-7 rounded-lg shadow-md shadow-black h-fit flex-col gap-5 items-center flex lg:hidden mt-10">
           <h6 className="text-center text-lg font-bold">{contact.doubtBox.title}</h6>
 
-          <Button.Primary className="text-white rounded-lg font-semibold">
+          <Button.Primary
+            className="text-white rounded-lg font-semibold"
+            onClick={() => openWhatsapp()}
+          >
             {contact.doubtBox.labelButton}
           </Button.Primary>
         </div>
       </Wrapper>
 
       <Wrapper className="w-full h-dvh fixed top-0 left-0 -z-10 brightness-[0.2] bg-white">
-        <img src="/plantation.jpg" className="w-full h-full" alt="" loading="lazy" />
+        <img src="/plantation.webp" className="w-full h-full" alt="" loading="lazy" />
       </Wrapper>
 
       <FloatingHeader />

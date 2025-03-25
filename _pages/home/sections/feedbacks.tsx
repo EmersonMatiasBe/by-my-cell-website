@@ -35,8 +35,10 @@ export default function Feedbacks() {
             {feedbacks.map(({ client, feedback, position }, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="bg-white h-full rounded-lg shadow-black shadow-md  p-6 flex flex-col items-center text-center">
-                  <h3 className="text-xl font-semibold text-secondary-500">{client}</h3>
-                  <p className="text-sm text-gray-500 mb-4">{position}</p>
+                  <h3 className="text-xl font-semibold text-secondary-500 line-clamp-1">
+                    {client}
+                  </h3>
+                  <p className="text-sm text-gray-500 mb-4 line-clamp-1">{position}</p>
                   <p className="text-gray-700 mb-4 line-clamp-4">{feedback}</p>
                   <Dialog>
                     <DialogTrigger className="bg-secondary-500 px-5 py-5 text-white w-full max-w-[600px] mx-auto font-semibold rounded-lg">

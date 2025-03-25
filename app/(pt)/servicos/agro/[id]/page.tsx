@@ -40,11 +40,14 @@ export default function AgroServices({ params }: { params: { id: ID } }) {
           </h2>
 
           <Wrapper className="w-full  flex flex-col justify-center max-w-[800px] mx-auto">
-            <div className="mb-8">
-              <h6 className="font-bold text-2xl text-primary-800 mb-2">Descrição</h6>
-              <p className="text-xl">{agroServices[id].description}</p>
-            </div>
-
+            {agroServices[id].description.map(({ title, text }) => {
+              return (
+                <div className="mb-8" key={title}>
+                  <h6 className="font-bold text-2xl text-primary-800 mb-2">{title}</h6>
+                  <p className="text-xl">{text}</p>
+                </div>
+              )
+            })}
             <Button.Primary className="text-white mt-10 h-20 max-w-[800px] mx-auto">
               Fazer um Orçamento
             </Button.Primary>
