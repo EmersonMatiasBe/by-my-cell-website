@@ -1,9 +1,9 @@
 import FloatingHeader from '@/components/floating-header'
 import FloatingWhatsapp from '@/components/floating-whatsapp'
-import Button from '@/components/ui/button/index'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import useTranslations from '@/i18n/translations'
+import OpenBudget from './openBudget'
 
 export function generateStaticParams() {
   return [
@@ -48,9 +48,7 @@ export default function AgroServices({ params }: { params: { id: ID } }) {
                 </div>
               )
             })}
-            <Button.Primary className="text-white mt-10 h-20 max-w-[800px] mx-auto">
-              Fazer um Orçamento
-            </Button.Primary>
+            <OpenBudget />
           </Wrapper>
         </div>
       </div>

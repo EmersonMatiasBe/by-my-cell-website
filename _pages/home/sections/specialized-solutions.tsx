@@ -23,7 +23,7 @@ export default function SpecializedSolutions({ lang }: { lang: 'pt' | 'en' }) {
 
           <div className="absolute absolute-center-x h-fit flex flex-col p-6 bg-white bg-opacity-90 rounded-lg shadow-md w-[90%] bottom-8">
             <h2 className="text-2xl md:text-4xl font-bold mb-2 text-green-500">{agro.title}</h2>
-            <p className="text-base md:text-lg text-gray-600 mb-4">{agro.text}</p>
+            <p className="text-base text-gray-600 mb-4">{agro.text}</p>
 
             <Button.Primary className="text-white">
               <Link href="/servicos/agro">{buttonLabel}</Link>
@@ -42,7 +42,7 @@ export default function SpecializedSolutions({ lang }: { lang: 'pt' | 'en' }) {
             <h2 className="text-2xl md:text-4xl font-bold mb-2 text-secondary-500">
               {searchers.title}
             </h2>
-            <p className="text-base md:text-lg text-gray-600 mb-4">{searchers.text}</p>
+            <p className="text-base text-gray-600 mb-4">{searchers.text}</p>
 
             <Button.Secondary className=" text-white">
               <Link href="/servicos/pesquisadores">{buttonLabel}</Link>

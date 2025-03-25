@@ -56,13 +56,13 @@ const home = {
         title: 'Genomas de Fungos',
         text: 'Sequenciamento completo de genomas de fungos e leveduras, com montagem a anotação',
         image: '/genomas-de-fungos.webp',
-        url: 'bioinformatica'
+        url: 'sequenciamento-de-genomas-de-fungos-e-leveduras'
       },
       {
         title: 'Metagenômica Shotgun',
         text: 'Análise por sequenciamento massivo de genomas presente em amostras complexas',
         image: '/metagenomica-shotgun.webp',
-        url: 'bioinformatica'
+        url: 'metagenomica-shotgun'
       },
       {
         title: ' Bioinformática',
