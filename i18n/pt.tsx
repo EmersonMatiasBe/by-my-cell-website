@@ -527,14 +527,13 @@ const agroServices = {
             geração. Identificamos os microrganismos benéficos, patogênicos, nematoides e o
             potencial metabólico. A partir dos resultados, é possível criar estratégias de manejo
             eficiente que otimizem a saúde do solo aprimorando processos produtivos. A produtividade
-            começa no Solo!
-            <br />
-            Indicamos a realização das coletas das amostras compostas formadas por 10 a 20 amostras
-            simples, cobrindo a área de interesse. Recomendamos 1 amostra composta a cada 20
-            hectares em média, ou 1 amostra composta por zona de manejo ou 1 amostra composta por
-            tratamento. Envio das amostras a temperatura ambiente.
+            começa no Solo
           </>
         )
+      },
+      {
+        title: 'Material Requerido',
+        text: 'Indicamos a realização das coletas das amostras compostas formadas por 10 a 20 amostras simples, cobrindo a área de interesse. Recomendamos 1 amostra composta a cada 20 hectares em média, ou 1 amostra composta por zona de manejo ou 1 amostra composta por tratamento. Envio das amostras a temperatura ambiente.'
       }
     ],
     image: '/microrganismos-do-solo-e-nematoides.webp'

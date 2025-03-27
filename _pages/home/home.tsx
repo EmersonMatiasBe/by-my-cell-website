@@ -4,12 +4,13 @@ import Feedbacks from './sections/feedbacks'
 import Results from './sections/results'
 import SpecializedSolutions from './sections/specialized-solutions'
 import Solutions from './sections/solutions'
-import Partners from './sections/partners'
+import Customers from './sections/customers'
 import AboutUs from './sections/about-us'
 import Ebook from './sections/ebook'
 import Steps from './sections/steps'
 import OtherServices from './sections/other-services'
 import FloatingHeader from '@/components/floating-header'
+import Partners from './sections/partners'
 
 export default function Home({ lang }: { lang: LanguageOptions }) {
   return (
@@ -18,13 +19,14 @@ export default function Home({ lang }: { lang: LanguageOptions }) {
 
       <Results lang={lang} />
 
-      <Partners />
+      <Customers />
 
       <Solutions />
 
       <SpecializedSolutions lang={lang} />
 
       <Steps />
+      <Partners />
 
       <Ebook />
 

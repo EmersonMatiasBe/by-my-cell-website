@@ -20,7 +20,7 @@ export default function Agro() {
         {search.items.map(({ title, subtitle, image, link }, index) => (
           <Link href={`/servicos/pesquisadores/${link}`} className="mt-auto" key={index}>
             <div
-              className={`${title === '' ? 'invisible' : 'flex'} flex-col w-full h-[420px] max-w-[600px] md:max-w-[400px] bg-white overflow-hidden rounded-lg`}
+              className={`${title === '' ? '!h-0 invisible' : 'flex'} flex-col w-full h-[420px] max-w-[600px] md:max-w-[400px] bg-white overflow-hidden rounded-lg`}
             >
               <img
                 className="w-[600px] h-[250px] min-h-[250px] object-cover object-center"
@@ -28,11 +28,11 @@ export default function Agro() {
                 alt=""
                 loading="lazy"
               />
-              <div className="px-4 py-4 flex flex-col h-full">
+              <div className="px-4 py-4 flex flex-col h-full relative">
                 <p className="font-semibold text-secondary-800 text-lg">{title}</p>
                 <p className="line-clamp-3 font-light mb-2">{subtitle}</p>
 
-                <IoArrowForwardCircle className="text-4xl ml-auto text-secondary-800" />
+                <IoArrowForwardCircle className="text-4xl ml-auto text-secondary-800 absolute bottom-4 right-4" />
               </div>
             </div>
           </Link>

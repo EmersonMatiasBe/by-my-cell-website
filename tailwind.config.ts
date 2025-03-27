@@ -38,9 +38,13 @@ const config: Config = {
         }
       },
       keyframes: {
-        animate: {
+        animateCustomers: {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-1900px)' }
+        },
+        animatePartners: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-2900px)' }
         },
         orbit: {
           '0%': { transform: 'rotate(-90deg)  translateX(200px)' },
@@ -50,7 +54,8 @@ const config: Config = {
         }
       },
       animation: {
-        slider: 'animate 10s linear infinite',
+        slider: 'animateCustomers 10s linear infinite',
+        sliderPartners: 'animatePartners 15s linear infinite',
         orbit: 'orbit 4s linear infinite'
       }
     }
