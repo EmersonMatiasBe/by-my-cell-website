@@ -40,7 +40,7 @@ const config: Config = {
       keyframes: {
         animateCustomers: {
           from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-1900px)' }
+          to: { transform: 'translateX(-4000px)' }
         },
         animatePartners: {
           from: { transform: 'translateX(0)' },
@@ -54,7 +54,7 @@ const config: Config = {
         }
       },
       animation: {
-        slider: 'animateCustomers 10s linear infinite',
+        slider: 'animateCustomers 15s linear infinite',
         sliderPartners: 'animatePartners 15s linear infinite',
         orbit: 'orbit 4s linear infinite'
       }
