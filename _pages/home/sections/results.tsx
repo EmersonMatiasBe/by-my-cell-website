@@ -12,16 +12,15 @@ export default function Results({ lang }: { lang: LanguageOptions }) {
   return (
     <Container
       id="results"
-      className="flex flex-col py-20 relative  gap-0 px-5 md:gap-5 md:flex-row"
+      className="flex flex-col py-20 relative  gap-0 px-5 md:gap-5 md:flex-col"
     >
-      <Wrapper className="w-full relative flex flex-col justify-start items-center md:max-w-[45%] md:items-start">
-        <h6 className="font-semibold mb-1">{subtitle}</h6>
-        <h2 className="text-4xl font-bold mb-2 text-center md:text-left leading-normal">{title}</h2>
+      <Wrapper className="w-full relative flex flex-col text-center items-center mb-10">
+        <h6 className="font-semibold mb-2">{subtitle}</h6>
+        <h2 className="text-4xl font-bold  text-center leading-normal">{title}</h2>
+        <p className="max-w-[1000px] text-center mx-auto">{text}</p>
       </Wrapper>
 
-      <Wrapper className="w-full flex flex-col gap-5  justify-center md:max-w-[55%] md:gap-10">
-        <p>{text}</p>
-
+      <Wrapper className="grid-cols-1 grid md:grid-cols-2 gap-10">
         {results.map(({ number, text }, index) => (
           <div
             className="flex flex-col text-center gap-2 px-5 bg-gray-50  items-center shadow-md  md:px-10 py-5 rounded-md"
@@ -38,7 +37,7 @@ export default function Results({ lang }: { lang: LanguageOptions }) {
         ))}
       </Wrapper>
 
-      <div className="w-1/2 h-full -bottom-0 xl:left-[-100px]   mx-auto absolute   -z-10">
+      <div className="w-1/2 h-full -bottom-[40px] xl:left-[-300px]   mx-auto absolute   -z-10">
         <img
           src="/results-dna.jpg"
           alt="Muda de planta"

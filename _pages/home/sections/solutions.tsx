@@ -56,9 +56,11 @@ export default function Solutions() {
               <div className="px-4 py-4">
                 <p className="font-semibold text-lg mb-3">{title}</p>
                 <p className="line-clamp-3 font-light mb-2">{text}</p>
-                <Button.Primary className="px-4 py-2 text-white rounded-md ml-auto">
-                  <Link href={`servicos/pesquisadores/${url}`}>{services.buttonLabel}</Link>
-                </Button.Primary>
+                <Link href={`servicos/pesquisadores/${url}`}>
+                  <Button.Primary className="px-4 py-2 text-white rounded-md ml-auto">
+                    {services.buttonLabel}
+                  </Button.Primary>
+                </Link>
               </div>
             </div>
           ))}

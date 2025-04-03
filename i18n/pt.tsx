@@ -3,7 +3,7 @@ const home = {
     title: 'Bem vindo à ByMyCell',
     subtitle: 'Simplificando a genômica no Brasil',
     firstButton: 'Fazer um orçamento online',
-    secondButton: 'Saber mais sobre a empresa'
+    secondButton: 'Saiba mais sobre a empresa'
   },
   results: {
     title: (
@@ -71,7 +71,7 @@ const home = {
         url: 'bioinformatica'
       }
     ],
-    buttonLabel: 'Saber mais'
+    buttonLabel: 'Saiba mais'
   },
   steps: {
     title: 'Conheça nosso fluxo de análise',
