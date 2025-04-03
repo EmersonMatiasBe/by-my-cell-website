@@ -32,10 +32,11 @@ export default function Solutions() {
               <div className="z-10 absolute bottom-10 pl-10 pr-5 py-4 text-white bg-black bg-opacity-90 w-full opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out">
                 <h3 className="text-2xl font-semibold mb-2">{title}</h3>
                 <p className="mb-3">{text}</p>
-
-                <Button.Primary className="px-4 py-2 rounded-md">
-                  <Link href={`servicos/pesquisadores/${url}`}>{services.buttonLabel}</Link>
-                </Button.Primary>
+                <Link href={`servicos/pesquisadores/${url}`}>
+                  <Button.Primary className="px-4 py-2 rounded-md">
+                    {services.buttonLabel}
+                  </Button.Primary>
+                </Link>
               </div>
 
               <div className="z-10 absolute bottom-10 py-4 text-white h-fit top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  group-hover:translate-x-[100vw] opacity-100  group-hover:opacity-0   transition-all duration-500 ease-in-out">

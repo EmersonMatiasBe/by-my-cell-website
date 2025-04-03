@@ -121,7 +121,7 @@ const home = {
   },
   bymysoil: {
     title: 'Análise genômica para agricultura de precisão',
-    text: 'Nossa plataforma ByMySoil é especializada no mapeamento de microrganismos de solo, visando redução nos riscos de doenças, otimização do uso de bioinusmos e ganho de produtividade na sua lavoura. Com base em análises laboratoriais e dados agronômicos, a plataforma oferece recomendações para um manejo assertivo e sustentável da terra.',
+    text: 'Nossa plataforma ByMySoil é especializada no mapeamento de microrganismos de solo, visando redução nos riscos de doenças, otimização do uso de bioinsumos e ganho de produtividade na sua lavoura. Com base em análises laboratoriais e dados agronômicos, a plataforma oferece recomendações para um manejo assertivo e sustentável da terra.',
     labelButton: 'Plataforma ByMySoil',
     link: 'https://bymysoil.com.br/'
   }
@@ -187,7 +187,7 @@ const contact = {
   },
   doubtBox: {
     title: 'Ficou com alguma dúvida? Entre em Contato',
-    labelButton: 'Saber mais sobre a empresa'
+    labelButton: 'Saiba mais sobre a empresa'
   },
   socialMedias: 'Nossas Redes Sociais'
 }
@@ -199,7 +199,7 @@ const aboutUs = {
     'Especializada em soluções para o agronegócio e para a pesquisa, a ByMyCell desenvolve tecnologias avançadas para análise de microrganismos de amostras biológicas, utilizando sequenciamento de DNA de nova geração. Sua principal plataforma, a ByMySoil, lançada no início de 2023, auxilia produtores rurais na identificação e mensuração da diversidade microbiana do solo, promovendo aumento de produtividade e redução no uso de fertilizantes e pesticidas químicos.',
     'Além disso, a empresa oferece serviços como análise de microbiota, sequenciamento completo de genomas de bactérias e fungos, metagenômica shotgun e bioinformática sob demanda, desenvolvendo pipelines customizadas para análises de dados em diferentes plataformas de sequenciamento. A ByMyCell também conta com sua spin-off BlackGenn, focada na prospecção e engenharia de proteínas e microrganismos, combinando genômica, metabolômica e computação de alto desempenho para acelerar a biotecnologia no Brasil.',
     'Na ByMyCell, somos movidos pela curiosidade científica e pela paixão por transformar conhecimento em soluções reais. Acreditamos que a biotecnologia tem o poder de revolucionar mercados, tornando processos mais sustentáveis, produtivos e inovadores.',
-    'O que nos torna únicos é a combinação de tecnologia de ponta, pesquisa aplicada e um olhar estratégico para os desafios do presente e do futuro. Desenvolvemos soluções genômicas avançadas para o agronegócio, a biotecnologia industrial e as pesquisas científicas, oferecendo respostas precisas e personalizadas, em equipe qualificada de mestres, doutores e especialistas.',
+    'O que nos torna únicos é a combinação de tecnologia de ponta, pesquisa aplicada e um olhar estratégico para os desafios do presente e do futuro. Desenvolvemos soluções genômicas avançadas para o agronegócio, para a biotecnologia industrial e para as pesquisas científicas, oferecendo respostas precisas e personalizadas, com equipe qualificada de mestres, doutores e especialistas.',
     'Nossa essência está na conexão entre ciência e tecnologia. Unimos inovação e acessibilidade para que produtores, pesquisadores e empresas tenham em mãos o que há de mais moderno em análise biológica. Mais do que dados, entregamos inteligência para impulsionar decisões e transformar realidades.',
     'Esse é o nosso propósito. Esse é o DNA da ByMyCell.'
   ],
@@ -213,7 +213,7 @@ const aboutUs = {
         image: '/about-us-rafael.webp'
       },
       {
-        name: 'Stela Virgíllio',
+        name: 'Stela Virgilio',
         linkedin: 'https://www.linkedin.com/in/stela-virgilio-250267212/',
         position: 'Co-fundadora',
         image: '/about-us-stela.webp'
@@ -295,7 +295,7 @@ const feedbacks = [
 ]
 
 const search = {
-  title: 'Serviços para Pesquisadores',
+  title: 'Serviços para Pesquisa',
   subtitle:
     'Nossa metodologia permite que pesquisadores e cientistas de empresas, institutos e universidades acelerem suas pesquisas genômicas para identificação de microrganismos em amostras biológicas como material fermentado, bioinsumos, fezes, rúmen, solo, outros. Além de material bruto, também aceitamos DNAs já extraídos.',
   items: [
@@ -344,7 +344,7 @@ const teste = {
     description: [
       {
         title: 'Descrição',
-        text: 'Serviço voltado para pesquisadores, empresas de biológicos, On Farm e demais que desejam analisar a composição bacteriana e fúngica de suas amostras. Trabalhamos com as plataformas Illumina (short reads) e Oxford Nanopore (long reads), entregando relatório, tabelas completas, análise de diversidade e predição de vias metabólicas.'
+        text: 'Serviço voltado para pesquisadores, empresas de biológicos e P&D, On Farm e demais que desejam analisar a composição bacteriana e fúngica de suas amostras. Nossa tecnologia permite identificar por sequenciamento regiões específicas do DNA de Bactérias e Fungos/leveduras. Trabalhamos com as plataformas Illumina (short reads) e Oxford Nanopore (long reads), entregando relatório, tabelas completas, análise de diversidade e predição de vias metabólicas.'
       },
       {
         title: 'Material Requerido',
@@ -352,7 +352,7 @@ const teste = {
       },
       {
         title: 'Para Amostras de DNA Já Extraídas',
-        text: 'Mínimo 500 ng de DNA extraído em um volume mínimode 50uL. Enviar em microtubos tipo eppendorf de 1.5mL devidamente identifcados, em geloseco/reciclável. Não concentrar as amostras. Recomendamos os kits de extração ZymoBIOMICS Mini Prep (ref: D4300) ou DNeasy PowerSoil Pro QIAGEN (ref: 47016).'
+        text: 'Mínimo 500 ng de DNA extraído em um volume mínimo de 50 uL. Enviar em microtubos tipo eppendorf de 1.5 mL devidamente identificados, em gelo seco/reciclável. Não concentrar as amostras. Recomendamos os kits de extração ZymoBIOMICS Mini Prep (ref: D4300) ou DNeasy PowerSoil Pro QIAGEN (ref: 47016).'
       }
     ],
     image: '/analise-de-microbiota.webp'
@@ -370,7 +370,7 @@ const teste = {
       },
       {
         title: 'Para Amostras de DNA Já Extraídas',
-        text: 'Mínimo 500 ng de DNA extraído em um volume mínimode 50uL. Enviar em microtubos tipo eppendorf de 1.5mL devidamente identificados, em geloseco/reciclável. Não concentrar as amostras. Recomendamos os kits de extração ZymoBIOMICS Mini Prep (ref: D4300) ou DNeasy PowerSoil Pro QIAGEN (ref: 47016).'
+        text: 'Mínimo 500 ng de DNA extraído em um volume mínimo de 50 uL. Enviar em microtubos tipo eppendorf de 1.5 mL devidamente identificados, em gelo seco/reciclável. Não concentrar as amostras. Recomendamos os kits de extração ZymoBIOMICS Mini Prep (ref: D4300) ou DNeasy PowerSoil Pro QIAGEN (ref: 47016).'
       }
     ],
     image: '/identificacao-de-microrganismos.webp'
@@ -436,10 +436,10 @@ const teste = {
         title: 'Descrição',
         text: (
           <>
-            Traga seu próprio dado, e desenvolvemos pipelines customizadas para análises de dados
+            Traga seu próprio dado e desenvolvemos pipelines customizadas para análises de dados
             gerados em diferentes plataformas de sequenciamento. <br />
             Para avaliação da demanda de bioinformática e análises customizadas, solicitamos a
-            especificação do serviço desejado, microrganismo(a) alvo(s) e/ou esperado(s), plataforma
+            especificação do serviço desejado, microrganismo(s) alvo(s) e/ou esperado(s), plataforma
             de sequenciamento usada, quantidade de dados brutos gerados, análises de dados
             recomendados, outros.
           </>
@@ -459,7 +459,7 @@ const agro = {
     {
       title: 'Microrganismos do Solo e Nematoides',
       subtitle:
-        'Conheça microrganismos e nematoides do solo da sua lavoura  e maneje o seu potencial.',
+        'Conheça microrganismos e nematoides do solo da sua lavoura  e maneje o seu potencial',
       image: '/microrganismos-do-solo-e-nematoides.webp',
       link: 'microrganismos-do-solo-e-nematoides'
     },
@@ -477,7 +477,7 @@ const agro = {
     },
     {
       title: 'Produção On Farm',
-      subtitle: ' Identificação de microrganismos de produção on farm.',
+      subtitle: ' Identificação de microrganismos de produção on farm',
       image: '/producao-on-farm.webp',
       link: 'producao-on-farm'
     },
@@ -490,7 +490,7 @@ const agro = {
     {
       title: 'Identificação de patógenos de plantas',
       subtitle:
-        'Identificação de microrganismos causadores de doenças em diferentes partes da planta.',
+        'Identificação de microrganismos causadores de doenças em diferentes partes da planta',
       image: '/identificacao-de-patogenos-de-plantas.webp',
       link: 'identificacao-de-patogenos-de-plantas'
     },
@@ -527,7 +527,7 @@ const agroServices = {
             geração. Identificamos os microrganismos benéficos, patogênicos, nematoides e o
             potencial metabólico. A partir dos resultados, é possível criar estratégias de manejo
             eficiente que otimizem a saúde do solo aprimorando processos produtivos. A produtividade
-            começa no Solo
+            começa no solo.
           </>
         )
       },
@@ -595,7 +595,7 @@ const agroServices = {
     image: '/microbiota-de-compostagem.webp'
   },
   'identificacao-de-patogenos-de-plantas': {
-    title: 'Identificação de patógenos de plantas',
+    title: 'Identificação de Patógenos de Plantas',
     description: [
       {
         title: 'Descrição',

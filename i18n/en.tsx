@@ -71,7 +71,7 @@ const home = {
         url: 'bioinformatica'
       }
     ],
-    buttonLabel: 'Saber mais'
+    buttonLabel: 'Saiba mais'
   },
   steps: {
     title: 'Conheça nosso fluxo de análise',
@@ -275,7 +275,7 @@ const feedbacks = [
 ]
 
 const search = {
-  title: 'Serviços para Pesquisadores',
+  title: 'Serviços para Pesquisa',
   subtitle:
     'Nossa metodologia permite que pesquisadores e cientistas de empresas, institutos e universidades acelerem suas pesquisas genômicas para identificação de microrganismos em amostras biológicas como material fermentado, bioinsumos, fezes, rúmen, solo, outros. Além de material bruto, também aceitamos DNAs já extraídos.',
   items: [

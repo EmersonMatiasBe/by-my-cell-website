@@ -24,9 +24,11 @@ export default function Header({ lang }: { lang: 'pt' | 'en' }) {
       className="h-[80px] w-full fixed bg-gradient-to-bl from-primary-500  to-secondary-500  left-0 right-0  z-50"
     >
       <Container className="w-full text-white h-full px-5 flex justify-between items-center">
-        <Wrapper className="w-[120px] sm:w-[200px]  flex h-full relative">
-          <img src="/logo.png" alt="Logo" className="object-contain w-full h-full" />
-        </Wrapper>
+        <Link href="/">
+          <Wrapper className="w-[120px] sm:w-[200px]  flex h-full relative">
+            <img src="/logo.png" alt="Logo" className="object-contain w-full h-full" />
+          </Wrapper>
+        </Link>
 
         <Wrapper className="gap-5 text-lg font-semibold hidden -- lg:flex">
           {header.map(({ href, items, label }, index) => {

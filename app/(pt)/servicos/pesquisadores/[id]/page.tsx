@@ -4,6 +4,7 @@ import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import useTranslations from '@/i18n/translations'
 import OpenBudget from './openBudget'
+import { Metadata } from 'next'
 
 export function generateStaticParams() {
   return [
@@ -17,6 +18,24 @@ export function generateStaticParams() {
 }
 
 type ID = 'analise-de-microbiota'
+
+const titles = {
+  'analise-de-microbiota': 'Análise de Microbiota',
+  'identificacao-de-microrganismos': 'Identificação de Microrganismos',
+  'sequenciamento-de-genomas-de-bacterias': 'Sequenciamento de Genomas de Bactérias',
+  'sequenciamento-de-genomas-de-fungos-e-leveduras':
+    'Sequenciamento de Genomas de Fungos e Leveduras',
+  'metagenomica-shotgun': 'Metagenômica Shotgun',
+  bioinformatica: 'Bioinformática'
+}
+
+export async function generateMetadata({ params }: { params: { id: ID } }): Promise<Metadata> {
+  const slug = titles[params.id]
+
+  return {
+    title: `ByMyCell - ${slug}`
+  }
+}
 
 export default function AgroServices({ params }: { params: { id: ID } }) {
   const { id } = params

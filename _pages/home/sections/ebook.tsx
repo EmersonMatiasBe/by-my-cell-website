@@ -17,7 +17,7 @@ export default function Ebook() {
   return (
     <Container className="py-20  relative shadow-[0px_0px_15px_0px_rgba(0,0,0,0.5)] max-w-full  text-white">
       <div className="mx-auto max-w-[1280px] px-6 lg:px-0 text-center z-10 relative">
-        <h2 className="text-4xl font-semibold text-white mb-10 leading-normal">{title}</h2>
+        <h2 className="text-4xl font-bold text-white mb-10 leading-normal">{title}</h2>
 
         <div className="flex flex-col lg:flex-row justify-center items-center gap-12">
           <div className="w-full max-w-[400px]">
@@ -51,7 +51,7 @@ export default function Ebook() {
         <img
           src="home-bg-ebook.webp"
           alt=""
-          className="object-cover object-bottom brightness-[0.2] w-full h-full"
+          className="object-cover object-bottom brightness-[0.7] w-full h-full"
           loading="lazy"
         />
       </div>

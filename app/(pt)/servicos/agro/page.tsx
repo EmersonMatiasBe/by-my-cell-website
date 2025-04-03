@@ -3,8 +3,15 @@ import FloatingWhatsapp from '@/components/floating-whatsapp'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import useTranslations from '@/i18n/translations'
+import { Metadata } from 'next'
 import Link from 'next/link'
 import { IoArrowForwardCircle } from 'react-icons/io5'
+
+export const metadata: Metadata = {
+  title: 'ByMyCell - Serviços para o Agro',
+  description:
+    'A ByMyCell é uma startup brasileira de biotecnologia que simplifica o acesso à genômica, oferecendo soluções avançadas para análise de microrganismos via DNA.'
+}
 
 export default function Agro() {
   const { agro } = useTranslations('pt')

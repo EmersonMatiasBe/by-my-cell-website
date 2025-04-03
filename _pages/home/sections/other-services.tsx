@@ -31,7 +31,7 @@ export default function OtherServices() {
       <Wrapper className="w-[80%] h-[500px] rounded-l-3xl relative overflow-hidden ml-auto shadow-xl shadow-black">
         <img
           src="/home-black-genn.webp"
-          className="w-full h-full object-cover object-left brightness-[0.4]"
+          className="w-full h-full object-cover object-left brightness-[0.4] -scale-x-100"
           alt=""
           loading="lazy"
         />

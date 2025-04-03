@@ -32,10 +32,11 @@ export default function AboutUs() {
 
         <div className="mt-10">
           <p className="text-justify lg:text-left">{text}</p>
-
-          <Button.Secondary className="font-semibold text-white mt-10 py-5">
-            <Link href="/quem-somos">{buttonLabel}</Link>
-          </Button.Secondary>
+          <Link href="/quem-somos">
+            <Button.Secondary className="font-semibold text-white mt-10 py-5">
+              {buttonLabel}
+            </Button.Secondary>
+          </Link>
         </div>
       </Wrapper>
     </Container>
