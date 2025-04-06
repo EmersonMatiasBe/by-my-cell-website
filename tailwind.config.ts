@@ -3,7 +3,7 @@ import type { Config } from 'tailwindcss'
 const config: Config = {
   darkMode: ['class'],
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './_pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
@@ -38,9 +38,13 @@ const config: Config = {
         }
       },
       keyframes: {
-        animate: {
+        animateCustomers: {
           from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-99vw)' }
+          to: { transform: 'translateX(-4000px)' }
+        },
+        animatePartners: {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-2900px)' }
         },
         orbit: {
           '0%': { transform: 'rotate(-90deg)  translateX(200px)' },
@@ -50,7 +54,8 @@ const config: Config = {
         }
       },
       animation: {
-        slider: 'animate 20s linear infinite',
+        slider: 'animateCustomers 15s linear infinite',
+        sliderPartners: 'animatePartners 15s linear infinite',
         orbit: 'orbit 4s linear infinite'
       }
     }

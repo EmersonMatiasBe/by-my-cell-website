@@ -20,7 +20,7 @@ export default function FloatingWhatsapp() {
       >
         Alguma dúvida? Entre em contato.
       </div>
-      <Link href="" className="relative h-10 w-10">
+      <Link href="https://wa.me/5516994664643" target="_blank" className="relative h-10 w-10">
         <img src="/whatsapp.png" alt="Icone do Whatsapp" className="w-10 h-10" />
       </Link>
     </Wrapper>

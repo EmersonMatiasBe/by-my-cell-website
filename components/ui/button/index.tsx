@@ -5,7 +5,7 @@ export function Primary({ className, ...props }: ButtonProps) {
   return (
     <RawButton
       className={twMerge(
-        'bg-primary-500 hover:bg-primary-700 px-5 py-5 rounded-lg w-full font-semibold gap-4',
+        'bg-primary-500 hover:bg-primary-700 p-5 rounded-lg w-full font-semibold gap-4',
         className
       )}
       {...props}
