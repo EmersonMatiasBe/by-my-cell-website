@@ -37,7 +37,7 @@ export default function Steps() {
           <img
             src="/home-steps.webp"
             className="w-full h-full object-cover rounded-lg"
-            alt=""
+            alt="Imagem do passo a passo"
             loading="lazy"
           />
         </div>

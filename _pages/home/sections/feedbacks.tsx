@@ -66,7 +66,7 @@ export default function Feedbacks() {
         <img
           src="/home-feedbacks.webp"
           className="w-full h-full object-cover object-center blur-[6px]"
-          alt=""
+          alt="Background do Depoimentos"
           loading="lazy"
         />
       </div>

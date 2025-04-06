@@ -27,7 +27,7 @@ export default function HeroSection({ lang }: { lang: LanguageOptions }) {
     <Wrapper className="w-full h-dvh ">
       <img
         className="w-full h-full object-cover object-right brightness-50"
-        alt=""
+        alt="Background do Hero"
         src="/bg-home.jpg"
       />
       <div className="w-full px-5 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white flex flex-col items-center text-center">

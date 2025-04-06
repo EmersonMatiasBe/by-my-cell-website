@@ -52,7 +52,7 @@ export default function Solutions() {
               className="max-w-[400px] w-full bg-white overflow-hidden rounded-lg shadow-md shadow-black hover:scale-110"
               key={index}
             >
-              <img src={image} className="" alt="" loading="lazy" />
+              <img src={image} className="" alt={title} loading="lazy" />
               <div className="px-4 py-4">
                 <p className="font-semibold text-lg mb-3">{title}</p>
                 <p className="line-clamp-3 font-light mb-2">{text}</p>

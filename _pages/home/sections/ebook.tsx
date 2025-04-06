@@ -50,7 +50,7 @@ export default function Ebook() {
       <div className="absolute top-0 left-0 w-full h-full">
         <img
           src="home-bg-ebook.webp"
-          alt=""
+          alt="Background do Ebook"
           className="object-cover object-bottom brightness-[0.7] w-full h-full"
           loading="lazy"
         />

@@ -76,7 +76,7 @@ export default function AgroServices({ params }: { params: { id: ID } }) {
         <img
           src={teste[id].image}
           className="w-full h-full object-cover brightness-[0.3]"
-          alt=""
+          alt="Background do serviço"
           loading="lazy"
         />
       </Wrapper>

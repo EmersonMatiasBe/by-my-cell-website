@@ -15,7 +15,7 @@ export default function OtherServices() {
         <img
           src="/home-by-my-soil.webp"
           className="w-full h-full object-cover brightness-[0.4]"
-          alt=""
+          alt="Background do ByMySoil"
           loading="lazy"
         />
         <div className="absolute  pl-5 bottom-10 right-10 text-white">
@@ -32,7 +32,7 @@ export default function OtherServices() {
         <img
           src="/home-black-genn.webp"
           className="w-full h-full object-cover object-left brightness-[0.4] -scale-x-100"
-          alt=""
+          alt="Background do Black Genn"
           loading="lazy"
         />
         <div className="absolute bottom-10 left-10 text-white pr-5">

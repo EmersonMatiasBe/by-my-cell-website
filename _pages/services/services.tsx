@@ -21,7 +21,7 @@ export default function Services() {
           <img
             src="/laboratory.webp"
             className="w-full h-full object-cover brightness-50 md:brightness-[0.2] md:group-hover:brightness-50 absolute top-0 left-0 -z-10"
-            alt=""
+            alt="Background do laboratório"
             loading="lazy"
           />
 
@@ -46,7 +46,7 @@ export default function Services() {
           <img
             src="/agro.webp"
             className="w-full h-full object-cover brightness-50 absolute top-0 left-0 -z-10 md:brightness-[0.2] md:group-hover:brightness-50 "
-            alt=""
+            alt="Background do Agro"
             loading="lazy"
           />
 

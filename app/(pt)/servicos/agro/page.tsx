@@ -32,7 +32,7 @@ export default function Agro() {
               <img
                 className="w-[600px] h-[250px] min-h-[250px] object-cover object-center"
                 src={image}
-                alt=""
+                alt={title}
                 loading="lazy"
               />
               <div className="px-4 py-4 flex flex-col h-full relative">
@@ -47,7 +47,12 @@ export default function Agro() {
       </Wrapper>
 
       <Wrapper className="w-full h-full  fixed top-0 left-0 -z-10 brightness-[0.3]">
-        <img src={agro.background} className="w-full h-full object-cover" alt="" loading="lazy" />
+        <img
+          src={agro.background}
+          className="w-full h-full object-cover"
+          alt="Background do Agro"
+          loading="lazy"
+        />
       </Wrapper>
 
       <FloatingHeader />

@@ -6,8 +6,11 @@ import Button from '@/components/ui/button/index'
 import Container from '@/components/ui/container'
 import Wrapper from '@/components/ui/wrapper'
 import openWhatsapp from '@/helpers/open-whatsapp'
+import sendEmail from '@/helpers/sendEmail'
 import useTranslations from '@/i18n/translations'
 import Link from 'next/link'
+import { useState } from 'react'
+import { useForm } from 'react-hook-form'
 import {
   RiMapPinFill,
   RiPhoneFill,
@@ -21,6 +24,10 @@ import {
 
 export default function Contact() {
   const { contact, socialMedias } = useTranslations('pt')
+
+  const { register, handleSubmit, reset } = useForm<Form>()
+
+  const [loading, setLoading] = useState(false)
 
   return (
     <Container className="pb-20 pt-40 px-5">
@@ -37,7 +44,10 @@ export default function Contact() {
               <h3 className="text-2xl font-bold text-primary-500 mb-6">
                 {contact.boxMessage.title}
               </h3>
-              <form className="space-y-6">
+              <form
+                className="space-y-6"
+                onSubmit={handleSubmit((e) => sendEmail(e, reset, setLoading))}
+              >
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700">
                     {contact.boxMessage.fields.name.name}
@@ -45,10 +55,11 @@ export default function Contact() {
                   <input
                     type="text"
                     id="name"
-                    name="name"
                     placeholder={contact.boxMessage.fields.name.placeholder}
+                    {...register('name', { required: true })}
                     className="mt-1 p-3 w-full rounded-lg border-2 border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all"
                     required
+                    disabled={loading}
                   />
                 </div>
 
@@ -59,10 +70,11 @@ export default function Contact() {
                   <input
                     type="email"
                     id="email"
-                    name="email"
                     placeholder={contact.boxMessage.fields.email.placeholder}
+                    {...register('email', { required: true })}
                     className="mt-1 p-3 w-full rounded-lg border-2 border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all"
                     required
+                    disabled={loading}
                   />
                 </div>
 
@@ -73,10 +85,11 @@ export default function Contact() {
                   <input
                     type="tel"
                     id="phone"
-                    name="phone"
                     placeholder={contact.boxMessage.fields.phone.placeholder}
+                    {...register('phone', { required: true })}
                     className="mt-1 p-3 w-full rounded-lg border-2 border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all"
                     required
+                    disabled={loading}
                   />
                 </div>
 
@@ -86,27 +99,36 @@ export default function Contact() {
                   </label>
                   <textarea
                     id="message"
-                    name="message"
                     rows={5}
                     placeholder={contact.boxMessage.fields.message.placeholder}
+                    {...register('message', { required: true })}
                     className="mt-1 p-3 w-full rounded-lg border-2 border-gray-200 focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all"
                     required
+                    disabled={loading}
                   ></textarea>
                 </div>
 
                 <div className="flex">
                   <p>
-                    <input type="checkbox" className="mr-2" />{' '}
+                    <input
+                      type="checkbox"
+                      className="mr-2"
+                      required
+                      {...register('checkbox', { required: true })}
+                      disabled={loading}
+                    />{' '}
                     {contact.boxMessage.permissionMessage}
                   </p>
                 </div>
 
-                <button
+                <Button.Primary
+                  loading={loading}
+                  loadingLabel="Enviando mensagem"
                   type="submit"
-                  className="w-full bg-primary-500 text-white p-5 rounded-lg font-semibold hover:bg-primary-700 transition-all duration-300"
+                  className="w-full  text-lg bg-primary-500 text-white"
                 >
                   {contact.boxMessage.labelButton}
-                </button>
+                </Button.Primary>
               </form>
             </div>
 
@@ -232,7 +254,12 @@ export default function Contact() {
       </Wrapper>
 
       <Wrapper className="w-full h-dvh fixed top-0 left-0 -z-10 brightness-[0.2] bg-white">
-        <img src="/plantation.webp" className="w-full h-full" alt="" loading="lazy" />
+        <img
+          src="/plantation.webp"
+          className="w-full h-full"
+          alt="Background de Plantação"
+          loading="lazy"
+        />
       </Wrapper>
 
       <FloatingHeader />
