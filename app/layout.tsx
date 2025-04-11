@@ -27,42 +27,15 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
-  mainEntity: [
-    {
-      '@type': 'Question',
-      name: "What is BlackGenn's mission?",
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'BlackGenn is a Brazilian biotechnology startup dedicated to accelerating the development of new biotechnological products. The company integrates advanced techniques in Synthetic Biology, Metagenomics, Automation, and Cloud Computing to develop technologies for engineering microorganisms and creating innovative agricultural bioproducts.'
-      }
-    },
-    {
-      '@type': 'Question',
-      name: 'What services does BlackGenn offer?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'BlackGenn offers solutions for microbial prospecting, microorganism engineering, and the creation of agricultural bioproducts using cutting-edge technology to ensure efficient development of innovative biotechnological solutions.'
-      }
-    },
-    {
-      '@type': 'Question',
-      name: 'How can I get in touch with BlackGenn?',
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: 'You can reach out to BlackGenn via their official website at https://blackgenn.com or through their contact page for inquiries about their services and collaborations.'
-      }
-    }
-  ],
-  headline: 'FAQs about BlackGenn - A Biotechnology Innovation Company',
   description:
-    "Learn more about BlackGenn's mission, services, and how they leverage advanced biotechnological techniques to innovate in agriculture and beyond.",
+    'A ByMyCell é uma startup brasileira de biotecnologia que simplifica o acesso à genômica, oferecendo soluções avançadas para análise de microrganismos via DNA.',
   author: {
     '@type': 'Organization',
-    name: 'BlackGenn',
-    url: 'https://blackgenn.com/'
+    name: 'ByMyCell',
+    url: 'https://bymycell.com/'
   },
-  datePublished: '2024-11-24',
-  dateModified: '2024-11-24'
+  datePublished: '2025-04-11',
+  dateModified: '2025-04-11'
 }
 
 export default function RootLayout({

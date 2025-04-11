@@ -291,6 +291,12 @@ const feedbacks = [
     position: 'Produtor Rural',
     feedback:
       'As análises são excelentes. Estão ajudando muito a direcionar os manejos biológicos nas nossas áreas. Conseguimos diagnosticar os principais patógenos e também os micro-organismos benéficos em cada área. O aplicativo também ajuda muito. Tem muitas informações e é bem simples e intuitivo de utilizar. O suporte técnico também é maravilhoso. Estamos muito satisfeitos.'
+  },
+  {
+    client: 'Joster Moreira',
+    position: 'Consultor Agrícola - JM Agro',
+    feedback:
+      'Passando para agradecer pela parceria e parabenizá-los pelo ótimo trabalho realizado. Através do relatório das análises, conseguimos comparar com áreas que já são feitas os tratamentos com microrganismos e identificar pontos de melhorias, podendo assim minimizar os gaps resultando em uma maior efetividade e produtividade.'
   }
 ]
 
